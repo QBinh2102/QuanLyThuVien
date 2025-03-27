@@ -1,0 +1,15 @@
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\bin\Debug\PresentationLayer.exe.config
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\bin\Debug\PresentationLayer.exe
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\bin\Debug\PresentationLayer.pdb
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.TrangChu.resources
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongTin.resources
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayMatKhau.resources

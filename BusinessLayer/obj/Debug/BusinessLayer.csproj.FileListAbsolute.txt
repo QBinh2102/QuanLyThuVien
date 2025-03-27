@@ -1,0 +1,7 @@
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\bin\Debug\BusinessLayer.dll
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\bin\Debug\BusinessLayer.pdb
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb
