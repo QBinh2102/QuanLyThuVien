@@ -46,7 +46,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(359, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 48);
+            this.label1.Size = new System.Drawing.Size(237, 48);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đăng Nhập";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,7 +73,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(408, 120);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(231, 31);
+            this.txtUsername.Size = new System.Drawing.Size(231, 37);
             this.txtUsername.TabIndex = 4;
             // 
             // txtPassword
@@ -81,7 +81,7 @@
             this.txtPassword.Location = new System.Drawing.Point(408, 192);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(231, 31);
+            this.txtPassword.Size = new System.Drawing.Size(231, 37);
             this.txtPassword.TabIndex = 5;
             // 
             // btnDangNhap
@@ -129,7 +129,7 @@
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(682, 410);

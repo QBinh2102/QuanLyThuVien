@@ -5,3 +5,10 @@ C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\BusinessLayer.dll
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\BusinessLayer.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb

@@ -13,3 +13,17 @@ C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongTin.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayMatKhau.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\PresentationLayer.exe.config
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\PresentationLayer.exe
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\PresentationLayer.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayMatKhau.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongTin.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.TrangChu.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.pdb
