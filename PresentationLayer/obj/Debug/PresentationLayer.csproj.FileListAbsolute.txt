@@ -27,3 +27,5 @@ C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\P
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyDocGia.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLySach.resources

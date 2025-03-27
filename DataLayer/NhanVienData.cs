@@ -11,7 +11,7 @@ namespace DataLayer
 {
     public class NhanVienData
     {
-        private string _connectionString = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True"; // Thay thế bằng chuỗi kết nối thực tế
+        private string _connectionString = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True"; // Thay thế bằng chuỗi kết nối thực tế
 
         public Account GetUserByUsernameAndPassword(string username, string password)
         {

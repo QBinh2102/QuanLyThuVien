@@ -13,6 +13,8 @@ namespace PresentationLayer
     public partial class TrangChu : Form
     {
         private ThongTin tt = null;
+        private QuanLyDocGia qldg = null;
+        private QuanLySach qls = null;
         public TrangChu()
         {
             InitializeComponent();
@@ -42,6 +44,28 @@ namespace PresentationLayer
                 tt.MdiParent = this;
                 pictureBox1.Controls.Add(tt);
                 tt.Show();
+            }
+        }
+
+        private void tsmiQLDocGia_Click(object sender, EventArgs e)
+        {
+            if (qldg == null || qldg.IsDisposed)
+            {
+                qldg = new QuanLyDocGia();
+                qldg.MdiParent = this;
+                pictureBox1.Controls.Add(qldg);
+                qldg.Show();
+            }
+        }
+
+        private void tsmiQLSach_Click(object sender, EventArgs e)
+        {
+            if (qls == null || qls.IsDisposed)
+            {
+                qls = new QuanLySach();
+                qls.MdiParent = this;
+                pictureBox1.Controls.Add(qls);
+                qls.Show();
             }
         }
     }

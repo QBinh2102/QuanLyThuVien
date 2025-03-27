@@ -38,9 +38,9 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.btTimKiem = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btReset = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
@@ -54,8 +54,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -145,6 +146,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
             // 
+            // btTimKiem
+            // 
+            this.btTimKiem.Location = new System.Drawing.Point(239, 152);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(98, 40);
+            this.btTimKiem.TabIndex = 11;
+            this.btTimKiem.Text = "Tìm";
+            this.btTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // tbTimKiem
+            // 
+            this.tbTimKiem.Location = new System.Drawing.Point(33, 102);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(304, 22);
+            this.tbTimKiem.TabIndex = 10;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -154,22 +171,6 @@
             this.label6.Size = new System.Drawing.Size(205, 29);
             this.label6.TabIndex = 2;
             this.label6.Text = "Tìm kiếm theo tên";
-            // 
-            // tbTimKiem
-            // 
-            this.tbTimKiem.Location = new System.Drawing.Point(33, 102);
-            this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(304, 22);
-            this.tbTimKiem.TabIndex = 10;
-            // 
-            // btTimKiem
-            // 
-            this.btTimKiem.Location = new System.Drawing.Point(239, 152);
-            this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(98, 40);
-            this.btTimKiem.TabIndex = 11;
-            this.btTimKiem.Text = "Tìm";
-            this.btTimKiem.UseVisualStyleBackColor = true;
             // 
             // btReset
             // 
