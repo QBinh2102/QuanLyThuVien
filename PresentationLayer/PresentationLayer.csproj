@@ -58,11 +58,35 @@
     <Compile Include="QuanLyDocGia.Designer.cs">
       <DependentUpon>QuanLyDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyMuonTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMuonTraSach.Designer.cs">
+      <DependentUpon>QuanLyMuonTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLySach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTheLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTheLoaiSach.Designer.cs">
+      <DependentUpon>QuanLyTheLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThayDoiQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>ThayDoiQuyDinh.cs</DependentUpon>
     </Compile>
     <Compile Include="ThayMatKhau.cs">
       <SubType>Form</SubType>
@@ -90,8 +114,20 @@
     <EmbeddedResource Include="QuanLyDocGia.resx">
       <DependentUpon>QuanLyDocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyMuonTraSach.resx">
+      <DependentUpon>QuanLyMuonTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTheLoaiSach.resx">
+      <DependentUpon>QuanLyTheLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThayDoiQuyDinh.resx">
+      <DependentUpon>ThayDoiQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThayMatKhau.resx">
       <DependentUpon>ThayMatKhau.cs</DependentUpon>

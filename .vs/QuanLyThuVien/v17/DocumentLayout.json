@@ -3,23 +3,63 @@
   "WorkspaceRootPath": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlynhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlynhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\thaydoiquydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\thaydoiquydinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlymuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlymuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlymuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlymuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlymuontrasach.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlymuontrasach.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\presentationlayer\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\datalayer\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\datalayer\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\presentationlayer\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,19 +67,11 @@
       "RelativeMoniker": "D:0:0:{4A89FD31-0448-4668-9C07-B93560E5A386}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\datalayer\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\datalayer\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{650DCB55-3777-4504-8AF3-77E17C5FC1FB}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\businesslayer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\businesslayer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\huynh\\onedrive\\desktop\\code\\quanlythuvien\\businesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\businesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D13D9F6-27B9-4EDC-95A7-C4E770AE3A4A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,11 +102,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLyNhanVien.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyNhanVien.Designer.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\QuanLyNhanVien.Designer.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAiwJIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:49:52.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuanLyNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyNhanVien.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.cs",
+              "RelativeToolTip": "PresentationLayer\\QuanLyNhanVien.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:49:47.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuanLyNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyNhanVien.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyNhanVien.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\QuanLyNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:47:45.165Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ThayDoiQuyDinh.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\ThayDoiQuyDinh.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ThayDoiQuyDinh.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\ThayDoiQuyDinh.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\ThayDoiQuyDinh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:44:41.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuanLyMuonTraSach.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyMuonTraSach.Designer.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\QuanLyMuonTraSach.Designer.cs",
+              "ViewState": "AQIAALkBAAAAAAAAAIAwwLkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:33:43.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuanLyMuonTraSach.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyMuonTraSach.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.cs",
+              "RelativeToolTip": "PresentationLayer\\QuanLyMuonTraSach.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAApwBMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:33:36.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuanLyMuonTraSach.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyMuonTraSach.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyMuonTraSach.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\QuanLyMuonTraSach.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:21:10.09Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuanLyTheLoaiSach.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyTheLoaiSach.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\QuanLyTheLoaiSach.cs",
+              "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyTheLoaiSach.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\QuanLyTheLoaiSach.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:15:05.613Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "DangNhap.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\DangNhap.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DangNhap.cs",
@@ -82,38 +214,35 @@
               "RelativeToolTip": "PresentationLayer\\DangNhap.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:56:37.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T13:56:37.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "NhanVienData.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\DataLayer\\NhanVienData.cs",
               "RelativeDocumentMoniker": "DataLayer\\NhanVienData.cs",
               "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\DataLayer\\NhanVienData.cs",
               "RelativeToolTip": "DataLayer\\NhanVienData.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:55:58.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T13:55:58.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "DataProvider.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\DataLayer\\DataProvider.cs",
               "RelativeDocumentMoniker": "DataLayer\\DataProvider.cs",
               "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\DataLayer\\DataProvider.cs",
               "RelativeToolTip": "DataLayer\\DataProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:55:23.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T13:55:23.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\BusinessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Class1.cs",
@@ -121,12 +250,11 @@
               "RelativeToolTip": "BusinessLayer\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:55:15.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T13:55:15.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\BusinessLayer\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\UserService.cs",
@@ -134,12 +262,11 @@
               "RelativeToolTip": "BusinessLayer\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:55:09.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T13:55:09.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "TrangChu.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\TrangChu.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\TrangChu.cs",
@@ -152,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "TrangChu.Designer.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\TrangChu.Designer.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\TrangChu.Designer.cs",
@@ -165,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "QuanLyDocGia.Designer.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyDocGia.Designer.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\QuanLyDocGia.Designer.cs",
@@ -178,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "QuanLySach.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLySach.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\QuanLySach.cs",
@@ -191,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "QuanLySach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLySach.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\QuanLySach.cs",
@@ -203,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "QuanLyDocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\QuanLyDocGia.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\QuanLyDocGia.cs",
@@ -215,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "TrangChu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\TrangChu.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\TrangChu.cs",
@@ -227,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "ThayMatKhau.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\ThayMatKhau.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThayMatKhau.cs",
@@ -238,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "ThongTin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\ThongTin.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThongTin.cs",
@@ -249,15 +376,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\DangNhap.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DangNhap.cs",
               "ToolTip": "C:\\Users\\huynh\\OneDrive\\Desktop\\Code\\QuanLyThuVien\\PresentationLayer\\DangNhap.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:35:42.734Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-27T12:35:42.734Z"
             }
           ]
         }
