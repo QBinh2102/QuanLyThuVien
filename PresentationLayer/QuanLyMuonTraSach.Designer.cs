@@ -49,7 +49,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbMaDG = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btLuu2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tbTienPhat = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dtNgayTra2 = new System.Windows.Forms.DateTimePicker();
             this.tbSoNgayTre = new System.Windows.Forms.TextBox();
@@ -63,9 +66,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tbMaDG2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tbTienPhat = new System.Windows.Forms.TextBox();
-            this.btLuu2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -118,7 +118,7 @@
             this.groupBox1.Controls.Add(this.tbMaDG);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(966, 639);
+            this.groupBox1.Size = new System.Drawing.Size(966, 554);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -276,6 +276,15 @@
             this.tabPage2.Text = "Quản lý trả sách";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btLuu2
+            // 
+            this.btLuu2.Location = new System.Drawing.Point(818, 526);
+            this.btLuu2.Name = "btLuu2";
+            this.btLuu2.Size = new System.Drawing.Size(154, 74);
+            this.btLuu2.TabIndex = 2;
+            this.btLuu2.Text = "Lưu";
+            this.btLuu2.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label13);
@@ -292,6 +301,22 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ghi chú";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(419, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(142, 32);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Tiền phạt";
+            // 
+            // tbTienPhat
+            // 
+            this.tbTienPhat.Location = new System.Drawing.Point(580, 152);
+            this.tbTienPhat.Name = "tbTienPhat";
+            this.tbTienPhat.Size = new System.Drawing.Size(193, 38);
+            this.tbTienPhat.TabIndex = 6;
             // 
             // label12
             // 
@@ -414,36 +439,11 @@
             this.label1.Text = "QUẢN LÝ MƯỢN - TRẢ SÁCH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(419, 155);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 32);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Tiền phạt";
-            // 
-            // tbTienPhat
-            // 
-            this.tbTienPhat.Location = new System.Drawing.Point(580, 152);
-            this.tbTienPhat.Name = "tbTienPhat";
-            this.tbTienPhat.Size = new System.Drawing.Size(193, 38);
-            this.tbTienPhat.TabIndex = 6;
-            // 
-            // btLuu2
-            // 
-            this.btLuu2.Location = new System.Drawing.Point(818, 526);
-            this.btLuu2.Name = "btLuu2";
-            this.btLuu2.Size = new System.Drawing.Size(154, 74);
-            this.btLuu2.TabIndex = 2;
-            this.btLuu2.Text = "Lưu";
-            this.btLuu2.UseVisualStyleBackColor = true;
-            // 
             // QuanLyMuonTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 753);
+            this.ClientSize = new System.Drawing.Size(994, 754);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

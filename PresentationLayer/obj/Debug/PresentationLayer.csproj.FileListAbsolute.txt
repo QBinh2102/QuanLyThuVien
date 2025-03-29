@@ -31,3 +31,7 @@ C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\P
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLySach.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyDocGia.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLySach.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyMuonTraSach.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyNhanVien.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyTheLoaiSach.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayDoiQuyDinh.resources

@@ -38,7 +38,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiQLTheLoai = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmiQLTacGia = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMuonTra = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThoat = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,8 +94,7 @@
             this.tsmiQLSach,
             this.toolStripSeparator2,
             this.tsmiQLTheLoai,
-            this.toolStripSeparator3,
-            this.tsmiQLTacGia});
+            this.toolStripSeparator3});
             this.tsmiDanhMuc.Name = "tsmiDanhMuc";
             this.tsmiDanhMuc.Size = new System.Drawing.Size(146, 20);
             this.tsmiDanhMuc.Text = "Quản Lý Danh Mục";
@@ -130,23 +128,19 @@
             this.tsmiQLTheLoai.Name = "tsmiQLTheLoai";
             this.tsmiQLTheLoai.Size = new System.Drawing.Size(224, 26);
             this.tsmiQLTheLoai.Text = "Quản Lý Thể Loại";
+            this.tsmiQLTheLoai.Click += new System.EventHandler(this.tsmiQLTheLoai_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
-            // tsmiQLTacGia
-            // 
-            this.tsmiQLTacGia.Name = "tsmiQLTacGia";
-            this.tsmiQLTacGia.Size = new System.Drawing.Size(224, 26);
-            this.tsmiQLTacGia.Text = "Quản Lý Tác Giả";
-            // 
             // tsmiMuonTra
             // 
             this.tsmiMuonTra.Name = "tsmiMuonTra";
             this.tsmiMuonTra.Size = new System.Drawing.Size(152, 20);
             this.tsmiMuonTra.Text = "Quản Lý Mượn - Trả";
+            this.tsmiMuonTra.Click += new System.EventHandler(this.tsmiMuonTra_Click);
             // 
             // tsmiThongKe
             // 
@@ -210,7 +204,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem tsmiQLTheLoai;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem tsmiQLTacGia;
         private System.Windows.Forms.ToolStripMenuItem tsmiMuonTra;
         private System.Windows.Forms.ToolStripMenuItem tsmiThongKe;
         private System.Windows.Forms.ToolStripMenuItem tsmiThoat;

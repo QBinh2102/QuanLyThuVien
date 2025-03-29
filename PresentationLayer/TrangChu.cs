@@ -13,8 +13,13 @@ namespace PresentationLayer
     public partial class TrangChu : Form
     {
         private ThongTin tt = null;
-        private QuanLyDocGia qldg = null;
-        private QuanLySach qls = null;
+        private QuanLyDocGia qlDocGia = null;
+        private QuanLySach qlSach = null;
+        private QuanLyNhanVien qlNhanVien = null;
+        private QuanLyMuonTraSach qlMuonTraSach = null;
+        private ThayDoiQuyDinh qlQuyDinh = null;
+        private QuanLyTheLoaiSach qlTheLoaiSach = null;
+
         public TrangChu()
         {
             InitializeComponent();
@@ -49,23 +54,58 @@ namespace PresentationLayer
 
         private void tsmiQLDocGia_Click(object sender, EventArgs e)
         {
-            if (qldg == null || qldg.IsDisposed)
+            if (qlDocGia == null || qlDocGia.IsDisposed)
             {
-                qldg = new QuanLyDocGia();
-                qldg.MdiParent = this;
-                pictureBox1.Controls.Add(qldg);
-                qldg.Show();
+                qlDocGia = new QuanLyDocGia();
+                qlDocGia.MdiParent = this;
+                pictureBox1.Controls.Add(qlDocGia);
+                qlDocGia.Show();
             }
         }
 
         private void tsmiQLSach_Click(object sender, EventArgs e)
         {
-            if (qls == null || qls.IsDisposed)
+            if (qlSach == null || qlSach.IsDisposed)
             {
-                qls = new QuanLySach();
-                qls.MdiParent = this;
-                pictureBox1.Controls.Add(qls);
-                qls.Show();
+                qlSach = new QuanLySach();
+                qlSach.MdiParent = this;
+                pictureBox1.Controls.Add(qlSach);
+                qlSach.Show();
+            }
+        }
+
+        //private void tsmiQLNhanVien_Click(object sender, EventArgs e)
+        //{
+        //    if (qlNhanVien == null || qlNhanVien.IsDisposed)
+        //    {
+        //        qlNhanVien = new QuanLyNhanVien();
+        //        qlNhanVien.MdiParent = this;
+        //        pictureBox1.Controls.Add(qlNhanVien);
+        //        qlNhanVien.Show();
+        //    }
+        //}
+
+      
+
+        private void tsmiQLTheLoai_Click(object sender, EventArgs e)
+        {
+            if (qlTheLoaiSach == null || qlTheLoaiSach.IsDisposed)
+            {
+                qlTheLoaiSach = new QuanLyTheLoaiSach();
+                qlTheLoaiSach.MdiParent = this;
+                pictureBox1.Controls.Add(qlTheLoaiSach);
+                qlTheLoaiSach.Show();
+            }
+        }
+
+        private void tsmiMuonTra_Click(object sender, EventArgs e)
+        {
+            if (qlMuonTraSach == null || qlMuonTraSach.IsDisposed)
+            {
+                qlMuonTraSach = new QuanLyMuonTraSach();
+                qlMuonTraSach.MdiParent = this;
+                pictureBox1.Controls.Add(qlMuonTraSach);
+                qlMuonTraSach.Show();
             }
         }
     }
