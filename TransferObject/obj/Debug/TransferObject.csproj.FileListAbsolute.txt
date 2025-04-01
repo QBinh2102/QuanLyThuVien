@@ -4,3 +4,9 @@ C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\TransferObject\obj
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.dll
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\TransferObject.dll
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\bin\Debug\TransferObject.pdb
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.csproj.AssemblyReference.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.dll
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\TransferObject\obj\Debug\TransferObject.pdb

@@ -9,7 +9,7 @@ using TransferObject;
 
 namespace DataLayer
 {
-    internal class DataProvider
+   public class DataProvider
     {
         private SqlConnection cn;
         public DataProvider()
@@ -19,7 +19,7 @@ namespace DataLayer
             cn = new SqlConnection(cnStr);
         }
 
-        private void Connect()
+        public void Connect()
         {
             try
             {
@@ -34,7 +34,7 @@ namespace DataLayer
             }
         }
 
-        private void DisConnect()
+        public void DisConnect()
         {
             try
             {
@@ -68,5 +68,38 @@ namespace DataLayer
                 DisConnect();
             }
         }
-    }
+        public SqlDataReader MyExecuteReader(string sql, CommandType type)
+        {
+            SqlCommand cmd = new SqlCommand(sql, cn);
+            cmd.CommandType = type;
+            try
+            {
+                return cmd.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int MyExecuteNonQuery(string sql, CommandType type)
+        {
+            SqlCommand cmd = new SqlCommand(sql, cn);
+            cmd.CommandType = type;
+            try
+            {
+                Connect();
+                return cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DisConnect();
+            }
+        }
+    
+}
 }
