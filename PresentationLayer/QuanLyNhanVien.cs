@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,16 @@ namespace PresentationLayer
 {
     public partial class QuanLyNhanVien : Form
     {
+        private NhanVienBL nhanVienBL;
         public QuanLyNhanVien()
         {
             InitializeComponent();
+            nhanVienBL = new NhanVienBL();
         }
 
-       
+        private void QuanLyNhanVien_Load(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = nhanVienBL.GetNhanViens();
+        }
     }
 }

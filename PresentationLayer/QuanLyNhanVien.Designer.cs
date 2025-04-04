@@ -272,6 +272,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "QuanLyNhanVien";
             this.Text = "QuanLyNhanVien";
+            this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();

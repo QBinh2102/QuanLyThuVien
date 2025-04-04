@@ -19,6 +19,7 @@ namespace PresentationLayer
         private QuanLyMuonTraSach qlMuonTraSach = null;
         private ThayDoiQuyDinh qlQuyDinh = null;
         private QuanLyTheLoaiSach qlTheLoaiSach = null;
+       
 
         public TrangChu()
         {
@@ -74,18 +75,18 @@ namespace PresentationLayer
             }
         }
 
-        //private void tsmiQLNhanVien_Click(object sender, EventArgs e)
-        //{
-        //    if (qlNhanVien == null || qlNhanVien.IsDisposed)
-        //    {
-        //        qlNhanVien = new QuanLyNhanVien();
-        //        qlNhanVien.MdiParent = this;
-        //        pictureBox1.Controls.Add(qlNhanVien);
-        //        qlNhanVien.Show();
-        //    }
-        //}
+        private void tsmiQLNhanVien_Click(object sender, EventArgs e)
+        {
+            if (qlNhanVien == null || qlNhanVien.IsDisposed)
+            {
+                qlNhanVien = new QuanLyNhanVien();
+                qlNhanVien.MdiParent = this;
+                pictureBox1.Controls.Add(qlNhanVien);
+                qlNhanVien.Show();
+            }
+        }
 
-      
+
 
         private void tsmiQLTheLoai_Click(object sender, EventArgs e)
         {
@@ -108,5 +109,7 @@ namespace PresentationLayer
                 qlMuonTraSach.Show();
             }
         }
+
+     
     }
 }

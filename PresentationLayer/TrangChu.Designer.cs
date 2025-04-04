@@ -38,6 +38,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiQLTheLoai = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiQLNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMuonTra = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThoat = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,7 +95,8 @@
             this.tsmiQLSach,
             this.toolStripSeparator2,
             this.tsmiQLTheLoai,
-            this.toolStripSeparator3});
+            this.toolStripSeparator3,
+            this.tsmiQLNhanVien});
             this.tsmiDanhMuc.Name = "tsmiDanhMuc";
             this.tsmiDanhMuc.Size = new System.Drawing.Size(146, 20);
             this.tsmiDanhMuc.Text = "Quản Lý Danh Mục";
@@ -134,6 +136,13 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            // 
+            // tsmiQLNhanVien
+            // 
+            this.tsmiQLNhanVien.Name = "tsmiQLNhanVien";
+            this.tsmiQLNhanVien.Size = new System.Drawing.Size(224, 26);
+            this.tsmiQLNhanVien.Text = "Quản Lý Nhân Viên ";
+            this.tsmiQLNhanVien.Click += new System.EventHandler(this.tsmiQLNhanVien_Click);
             // 
             // tsmiMuonTra
             // 
@@ -208,6 +217,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiThongKe;
         private System.Windows.Forms.ToolStripMenuItem tsmiThoat;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiQLNhanVien;
     }
 }
 

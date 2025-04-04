@@ -21,7 +21,7 @@ namespace DataLayer
                 string query = "SELECT id, hoTen, email, soDienThoai, queQuan FROM NhanVien WHERE username = @Username AND password = @Password"; // Lưu ý: Cần mã hóa mật khẩu trong CSDL
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", username);
-                command.Parameters.AddWithValue("@Password", password); // Lưu ý: Không nên lưu mật khẩu dạng plain text
+                command.Parameters.AddWithValue("@Password", password); 
 
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
