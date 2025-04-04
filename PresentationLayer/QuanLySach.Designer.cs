@@ -64,7 +64,7 @@
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuongConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -391,7 +391,7 @@
             this.id,
             this.tenSach,
             this.tacGia,
-            this.idTheLoai,
+            this.tenTheLoai,
             this.namXuatBan,
             this.soLuong,
             this.soLuongConLai,
@@ -402,6 +402,7 @@
             this.dgvSach.RowTemplate.Height = 24;
             this.dgvSach.Size = new System.Drawing.Size(1055, 191);
             this.dgvSach.TabIndex = 0;
+            this.dgvSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellClick);
             // 
             // id
             // 
@@ -427,13 +428,13 @@
             this.tacGia.Name = "tacGia";
             this.tacGia.Width = 150;
             // 
-            // idTheLoai
+            // tenTheLoai
             // 
-            this.idTheLoai.DataPropertyName = "idTheLoai";
-            this.idTheLoai.HeaderText = "Thể loại";
-            this.idTheLoai.MinimumWidth = 6;
-            this.idTheLoai.Name = "idTheLoai";
-            this.idTheLoai.Width = 150;
+            this.tenTheLoai.DataPropertyName = "tenTheLoai";
+            this.tenTheLoai.HeaderText = "Thể loại";
+            this.tenTheLoai.MinimumWidth = 6;
+            this.tenTheLoai.Name = "tenTheLoai";
+            this.tenTheLoai.Width = 150;
             // 
             // namXuatBan
             // 
@@ -441,6 +442,7 @@
             this.namXuatBan.HeaderText = "Năm xuất bản";
             this.namXuatBan.MinimumWidth = 6;
             this.namXuatBan.Name = "namXuatBan";
+            this.namXuatBan.Width = 125;
             // 
             // soLuong
             // 
@@ -448,6 +450,7 @@
             this.soLuong.HeaderText = "Số lượng";
             this.soLuong.MinimumWidth = 6;
             this.soLuong.Name = "soLuong";
+            this.soLuong.Width = 125;
             // 
             // soLuongConLai
             // 
@@ -455,6 +458,7 @@
             this.soLuongConLai.HeaderText = "Số lượng còn lại";
             this.soLuongConLai.MinimumWidth = 6;
             this.soLuongConLai.Name = "soLuongConLai";
+            this.soLuongConLai.Width = 125;
             // 
             // giaBia
             // 
@@ -535,7 +539,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn tacGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTheLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenTheLoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn namXuatBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongConLai;
