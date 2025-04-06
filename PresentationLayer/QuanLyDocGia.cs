@@ -28,5 +28,21 @@ namespace PresentationLayer
         {
             dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
         }
+
+        private void dgvDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+
+                DataGridViewRow row = dgvDocGia.Rows[e.RowIndex];
+
+                tbMaDocGia.Text = row.Cells["ID"].Value?.ToString();
+                tbHoTen.Text = row.Cells["HoTen"].Value?.ToString();
+                tbSDT.Text = row.Cells["SDT"].Value?.ToString();
+                tbEmail.Text = row.Cells["Email"].Value?.ToString();
+                
+
+            }
+        }
     }
 }

@@ -263,6 +263,7 @@
             this.dgvDocGia.RowTemplate.Height = 24;
             this.dgvDocGia.Size = new System.Drawing.Size(1127, 304);
             this.dgvDocGia.TabIndex = 0;
+            this.dgvDocGia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocGia_CellClick);
             // 
             // id
             // 
