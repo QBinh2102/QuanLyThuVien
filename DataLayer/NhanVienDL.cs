@@ -12,7 +12,7 @@ namespace DataLayer
 {
     public class NhanVienDL:DataProvider
     {
-        public List<NhanVien> GetNhanViens()
+        public List<NhanVien> GetAllNhanVien()
         {
             List<NhanVien> nhanViens = new List<NhanVien>();
             string sql = "SELECT id, hoTen, email, soDienThoai, queQuan, vaiTro, CAST(ngayTao AS DATE) AS ngayTao, active FROM NhanVien\r\n";

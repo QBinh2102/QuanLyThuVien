@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdTheLoai = new System.Windows.Forms.RadioButton();
-            this.rdTacGia = new System.Windows.Forms.RadioButton();
-            this.rdTen = new System.Windows.Forms.RadioButton();
+            this.rbTacGia = new System.Windows.Forms.RadioButton();
+            this.rbTen = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btTimKiem = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbNamXB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tbTheLoai = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tbSoLuongNhap = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -69,6 +67,7 @@
             this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuongConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaBia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbTheLoaiSach = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,9 +77,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rdTheLoai);
-            this.groupBox1.Controls.Add(this.rdTacGia);
-            this.groupBox1.Controls.Add(this.rdTen);
+            this.groupBox1.Controls.Add(this.rbTacGia);
+            this.groupBox1.Controls.Add(this.rbTen);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(345, 133);
@@ -88,38 +86,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
             // 
-            // rdTheLoai
+            // rbTacGia
             // 
-            this.rdTheLoai.AutoSize = true;
-            this.rdTheLoai.Location = new System.Drawing.Point(62, 99);
-            this.rdTheLoai.Name = "rdTheLoai";
-            this.rdTheLoai.Size = new System.Drawing.Size(191, 35);
-            this.rdTheLoai.TabIndex = 2;
-            this.rdTheLoai.TabStop = true;
-            this.rdTheLoai.Text = "Theo thể loại";
-            this.rdTheLoai.UseVisualStyleBackColor = true;
+            this.rbTacGia.AutoSize = true;
+            this.rbTacGia.Location = new System.Drawing.Point(62, 71);
+            this.rbTacGia.Name = "rbTacGia";
+            this.rbTacGia.Size = new System.Drawing.Size(184, 35);
+            this.rbTacGia.TabIndex = 1;
+            this.rbTacGia.TabStop = true;
+            this.rbTacGia.Text = "Theo tác giả";
+            this.rbTacGia.UseVisualStyleBackColor = true;
             // 
-            // rdTacGia
+            // rbTen
             // 
-            this.rdTacGia.AutoSize = true;
-            this.rdTacGia.Location = new System.Drawing.Point(62, 64);
-            this.rdTacGia.Name = "rdTacGia";
-            this.rdTacGia.Size = new System.Drawing.Size(184, 35);
-            this.rdTacGia.TabIndex = 1;
-            this.rdTacGia.TabStop = true;
-            this.rdTacGia.Text = "Theo tác giả";
-            this.rdTacGia.UseVisualStyleBackColor = true;
-            // 
-            // rdTen
-            // 
-            this.rdTen.AutoSize = true;
-            this.rdTen.Location = new System.Drawing.Point(62, 30);
-            this.rdTen.Name = "rdTen";
-            this.rdTen.Size = new System.Drawing.Size(142, 35);
-            this.rdTen.TabIndex = 0;
-            this.rdTen.TabStop = true;
-            this.rdTen.Text = "Theo tên";
-            this.rdTen.UseVisualStyleBackColor = true;
+            this.rbTen.AutoSize = true;
+            this.rbTen.Location = new System.Drawing.Point(62, 30);
+            this.rbTen.Name = "rbTen";
+            this.rbTen.Size = new System.Drawing.Size(142, 35);
+            this.rbTen.TabIndex = 0;
+            this.rbTen.TabStop = true;
+            this.rbTen.Text = "Theo tên";
+            this.rbTen.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -140,6 +127,7 @@
             this.btTimKiem.TabIndex = 11;
             this.btTimKiem.Text = "Tìm";
             this.btTimKiem.UseVisualStyleBackColor = true;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
             // tbTimKiem
             // 
@@ -170,13 +158,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cbTheLoaiSach);
             this.groupBox3.Controls.Add(this.tbSoLuongConLai);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.tbGiaBia);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.tbNamXB);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.tbTheLoai);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.tbSoLuongNhap);
             this.groupBox3.Controls.Add(this.label5);
@@ -243,13 +231,6 @@
             this.label8.Size = new System.Drawing.Size(103, 29);
             this.label8.TabIndex = 15;
             this.label8.Text = "Năm XB";
-            // 
-            // tbTheLoai
-            // 
-            this.tbTheLoai.Location = new System.Drawing.Point(570, 30);
-            this.tbTheLoai.Name = "tbTheLoai";
-            this.tbTheLoai.Size = new System.Drawing.Size(243, 37);
-            this.tbTheLoai.TabIndex = 14;
             // 
             // label9
             // 
@@ -468,6 +449,14 @@
             this.giaBia.Name = "giaBia";
             this.giaBia.Width = 200;
             // 
+            // cbTheLoaiSach
+            // 
+            this.cbTheLoaiSach.FormattingEnabled = true;
+            this.cbTheLoaiSach.Location = new System.Drawing.Point(570, 27);
+            this.cbTheLoaiSach.Name = "cbTheLoaiSach";
+            this.cbTheLoaiSach.Size = new System.Drawing.Size(243, 38);
+            this.cbTheLoaiSach.TabIndex = 21;
+            // 
             // QuanLySach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
@@ -504,9 +493,8 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rdTheLoai;
-        private System.Windows.Forms.RadioButton rdTacGia;
-        private System.Windows.Forms.RadioButton rdTen;
+        private System.Windows.Forms.RadioButton rbTacGia;
+        private System.Windows.Forms.RadioButton rbTen;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btTimKiem;
         private System.Windows.Forms.TextBox tbTimKiem;
@@ -519,7 +507,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbNamXB;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbTheLoai;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbSoLuongNhap;
         private System.Windows.Forms.Label label5;
@@ -544,5 +531,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongConLai;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaBia;
+        private System.Windows.Forms.ComboBox cbTheLoaiSach;
     }
 }

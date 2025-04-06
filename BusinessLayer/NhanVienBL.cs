@@ -17,11 +17,11 @@ namespace BusinessLayer
             nhanVienDL = new NhanVienDL();
         }
 
-        public List<NhanVien> GetNhanViens()
+        public List<NhanVien> GetAllNhanVien()
         {
             try
             {
-                return nhanVienDL.GetNhanViens();
+                return nhanVienDL.GetAllNhanVien();
             }
             catch (Exception ex)
             {

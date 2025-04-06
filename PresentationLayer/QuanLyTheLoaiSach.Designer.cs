@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btThem = new System.Windows.Forms.Button();
+            this.tbTheLoai = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.btTimKiem = new System.Windows.Forms.Button();
-            this.tbTheLoai = new System.Windows.Forms.TextBox();
-            this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btLuu = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvTheLoai = new System.Windows.Forms.DataGridView();
+            this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,6 +55,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm thể loại";
+            // 
+            // btThem
+            // 
+            this.btThem.Location = new System.Drawing.Point(683, 72);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(143, 38);
+            this.btThem.TabIndex = 4;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            // 
+            // tbTheLoai
+            // 
+            this.tbTheLoai.Location = new System.Drawing.Point(24, 72);
+            this.tbTheLoai.Name = "tbTheLoai";
+            this.tbTheLoai.Size = new System.Drawing.Size(615, 38);
+            this.tbTheLoai.TabIndex = 4;
             // 
             // label1
             // 
@@ -80,22 +96,6 @@
             this.btTimKiem.TabIndex = 3;
             this.btTimKiem.Text = "Tìm kiếm";
             this.btTimKiem.UseVisualStyleBackColor = true;
-            // 
-            // tbTheLoai
-            // 
-            this.tbTheLoai.Location = new System.Drawing.Point(24, 72);
-            this.tbTheLoai.Name = "tbTheLoai";
-            this.tbTheLoai.Size = new System.Drawing.Size(615, 38);
-            this.tbTheLoai.TabIndex = 4;
-            // 
-            // btThem
-            // 
-            this.btThem.Location = new System.Drawing.Point(683, 72);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(143, 38);
-            this.btThem.TabIndex = 4;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
             // 
             // btSua
             // 
@@ -135,7 +135,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgvTheLoai);
+            this.groupBox2.Controls.Add(this.dgvTheLoaiSach);
             this.groupBox2.Location = new System.Drawing.Point(12, 429);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(862, 220);
@@ -143,15 +143,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách Thể loại";
             // 
-            // dgvTheLoai
+            // dgvTheLoaiSach
             // 
-            this.dgvTheLoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTheLoai.Location = new System.Drawing.Point(6, 37);
-            this.dgvTheLoai.Name = "dgvTheLoai";
-            this.dgvTheLoai.RowHeadersWidth = 51;
-            this.dgvTheLoai.RowTemplate.Height = 24;
-            this.dgvTheLoai.Size = new System.Drawing.Size(840, 166);
-            this.dgvTheLoai.TabIndex = 0;
+            this.dgvTheLoaiSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTheLoaiSach.Location = new System.Drawing.Point(6, 37);
+            this.dgvTheLoaiSach.Name = "dgvTheLoaiSach";
+            this.dgvTheLoaiSach.RowHeadersWidth = 51;
+            this.dgvTheLoaiSach.RowTemplate.Height = 24;
+            this.dgvTheLoaiSach.Size = new System.Drawing.Size(840, 166);
+            this.dgvTheLoaiSach.TabIndex = 0;
             // 
             // QuanLyTheLoaiSach
             // 
@@ -168,13 +168,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "QuanLyTheLoaiSach";
             this.Text = "QuanLyTheLoaiSach";
+            this.Load += new System.EventHandler(this.QuanLyTheLoaiSach_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +194,6 @@
         private System.Windows.Forms.Button btLuu;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvTheLoai;
+        private System.Windows.Forms.DataGridView dgvTheLoaiSach;
     }
 }

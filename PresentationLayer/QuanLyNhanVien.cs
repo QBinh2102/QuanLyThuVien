@@ -22,7 +22,7 @@ namespace PresentationLayer
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
-            dgvNhanVien.DataSource = nhanVienBL.GetNhanViens();
+            dgvNhanVien.DataSource = nhanVienBL.GetAllNhanVien();
         }
     }
 }

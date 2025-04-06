@@ -11,7 +11,7 @@ namespace DataLayer
 {
     public class DocGiaDL : DataProvider
     {
-        public List<DocGia> GetDocGias()
+        public List<DocGia> GetAllDocGia()
         {
             List<DocGia> docGias = new List<DocGia>();
             //string sql = "SELECT * FROM DocGia";

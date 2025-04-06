@@ -18,11 +18,11 @@ namespace BusinessLayer
             docGiaDL = new DocGiaDL(); 
         }
 
-        public List<DocGia> GetDocGias()
+        public List<DocGia> GetAllDocGia()
         {
             try
             {
-                return docGiaDL.GetDocGias();
+                return docGiaDL.GetAllDocGia();
             }
             catch (Exception ex)
             {

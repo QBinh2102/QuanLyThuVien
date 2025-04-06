@@ -12,7 +12,7 @@ namespace DataLayer
 {
     public class SachDL : DataProvider
     {
-        public List<Sach> GetSachs()
+        public List<Sach> GetAllSach()
         {
             List<Sach> sachs = new List<Sach>();
 

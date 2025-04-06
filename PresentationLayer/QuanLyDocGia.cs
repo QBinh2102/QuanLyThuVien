@@ -26,7 +26,7 @@ namespace PresentationLayer
 
         private void QuanLyDocGia_Load(object sender, EventArgs e)
         {
-            dgvDocGia.DataSource = docGiaBL.GetDocGias();
+            dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
         }
     }
 }
