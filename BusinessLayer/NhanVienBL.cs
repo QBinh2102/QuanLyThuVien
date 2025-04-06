@@ -29,5 +29,22 @@ namespace BusinessLayer
             }
 
         }
+
+        public List<NhanVien> TimKiemTheoTen(string keyword)
+        {
+            try
+            {
+                var allNhanVien = nhanVienDL.GetAllNhanVien();
+                return allNhanVien
+                    .Where(nv => nv.hoTen != null &&
+                                 nv.hoTen.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

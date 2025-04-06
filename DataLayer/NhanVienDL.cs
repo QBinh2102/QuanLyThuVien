@@ -15,7 +15,7 @@ namespace DataLayer
         public List<NhanVien> GetAllNhanVien()
         {
             List<NhanVien> nhanViens = new List<NhanVien>();
-            string sql = "SELECT id, hoTen, email, soDienThoai, queQuan, vaiTro, CAST(ngayTao AS DATE) AS ngayTao, active FROM NhanVien\r\n";
+            string sql = "SELECT id, hoTen, email, soDienThoai, queQuan,username, vaiTro, CAST(ngayTao AS DATE) AS ngayTao, active FROM NhanVien\r\n";
             try
             {
                 Connect();
@@ -27,10 +27,11 @@ namespace DataLayer
                     string email = reader["email"].ToString();
                     string soDienThoai = reader["soDienThoai"].ToString();
                     string queQuan = reader["queQuan"].ToString();
+                    string username = reader["username"].ToString();
                     int vaiTro = Convert.ToInt32(reader["vaiTro"]);
                     bool active = Convert.ToBoolean(reader["active"]);
 
-                    NhanVien nhanVien = new NhanVien(id, hoTen, email, soDienThoai, queQuan, vaiTro, active);
+                    NhanVien nhanVien = new NhanVien(id, hoTen, email, soDienThoai, queQuan,username, vaiTro, active);
                     nhanViens.Add(nhanVien);
                 }
                 reader.Close();
