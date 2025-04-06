@@ -91,5 +91,10 @@ namespace PresentationLayer
 
             dgvSach.DataSource = ketQua;
         }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

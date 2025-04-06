@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using DataLayer;
 using TransferObject;
+using System.Data.SqlClient;
 
 namespace BusinessLayer
 {
@@ -25,6 +26,28 @@ namespace BusinessLayer
                 return docGiaDL.GetAllDocGia();
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int AddDocGia(DocGia docGia)
+        {
+            try
+            {
+                return docGiaDL.AddDocGia(docGia);
+            }catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int UpdateDocGia(DocGia docGia)
+        {
+            try
+            {
+                return docGiaDL.UpdateDocGia(docGia);
+            }catch(SqlException ex)
             {
                 throw ex;
             }

@@ -14,10 +14,12 @@ namespace BusinessLayer
 
         public QuyDinh LayQuyDinh()
         {
+            QuyDinh q = new QuyDinh();
+            q = quyDinhDL.getQuyDinh();
             return new QuyDinh
             {
-                SoNgay = quyDinhDL.SoNgay,
-                SoSach = quyDinhDL.SoSach
+                SoNgay = q.SoNgay,
+                SoSach = q.SoSach
             };
         }
     }

@@ -11,11 +11,11 @@ namespace DataLayer
 {
    public class DataProvider
     {
-        private SqlConnection cn;
+        public SqlConnection cn;
         public DataProvider()
         {
-            string cnStr = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True;";
-            //string cnStr = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True;";
+            //string cnStr = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True;";
+            string cnStr = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True;";
             cn = new SqlConnection(cnStr);
         }
 

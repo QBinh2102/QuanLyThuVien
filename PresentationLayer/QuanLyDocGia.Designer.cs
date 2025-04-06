@@ -54,6 +54,8 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Active = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbDiaChi = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
@@ -81,7 +83,7 @@
             this.label2.Location = new System.Drawing.Point(21, 168);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 32);
+            this.label2.Size = new System.Drawing.Size(118, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã độc giả";
             // 
@@ -90,63 +92,63 @@
             this.tbMaDocGia.Location = new System.Drawing.Point(221, 162);
             this.tbMaDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.tbMaDocGia.Name = "tbMaDocGia";
-            this.tbMaDocGia.Size = new System.Drawing.Size(258, 38);
+            this.tbMaDocGia.Size = new System.Drawing.Size(258, 32);
             this.tbMaDocGia.TabIndex = 2;
             // 
             // tbHoTen
             // 
-            this.tbHoTen.Location = new System.Drawing.Point(221, 232);
+            this.tbHoTen.Location = new System.Drawing.Point(221, 206);
             this.tbHoTen.Margin = new System.Windows.Forms.Padding(6);
             this.tbHoTen.Name = "tbHoTen";
-            this.tbHoTen.Size = new System.Drawing.Size(405, 38);
+            this.tbHoTen.Size = new System.Drawing.Size(405, 32);
             this.tbHoTen.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 232);
+            this.label3.Location = new System.Drawing.Point(22, 209);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 32);
+            this.label3.Size = new System.Drawing.Size(105, 26);
             this.label3.TabIndex = 3;
             this.label3.Text = "Họ và tên";
             // 
             // tbSDT
             // 
-            this.tbSDT.Location = new System.Drawing.Point(221, 291);
+            this.tbSDT.Location = new System.Drawing.Point(221, 250);
             this.tbSDT.Margin = new System.Windows.Forms.Padding(6);
             this.tbSDT.Name = "tbSDT";
-            this.tbSDT.Size = new System.Drawing.Size(298, 38);
+            this.tbSDT.Size = new System.Drawing.Size(298, 32);
             this.tbSDT.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 291);
+            this.label4.Location = new System.Drawing.Point(21, 250);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 32);
+            this.label4.Size = new System.Drawing.Size(139, 26);
             this.label4.TabIndex = 5;
             this.label4.Text = "Số điện thoại";
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(221, 353);
+            this.tbEmail.Location = new System.Drawing.Point(221, 294);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(6);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(460, 38);
+            this.tbEmail.Size = new System.Drawing.Size(460, 32);
             this.tbEmail.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 353);
+            this.label5.Location = new System.Drawing.Point(22, 294);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 32);
+            this.label5.Size = new System.Drawing.Size(68, 26);
             this.label5.TabIndex = 7;
             this.label5.Text = "Email";
             // 
@@ -179,7 +181,7 @@
             this.tbTimKiem.Location = new System.Drawing.Point(51, 126);
             this.tbTimKiem.Margin = new System.Windows.Forms.Padding(6);
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(395, 38);
+            this.tbTimKiem.Size = new System.Drawing.Size(395, 32);
             this.tbTimKiem.TabIndex = 10;
             // 
             // label6
@@ -189,7 +191,7 @@
             this.label6.Location = new System.Drawing.Point(45, 60);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 32);
+            this.label6.Size = new System.Drawing.Size(185, 26);
             this.label6.TabIndex = 2;
             this.label6.Text = "Tìm kiếm theo tên";
             // 
@@ -212,6 +214,7 @@
             this.btThem.TabIndex = 13;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -222,6 +225,7 @@
             this.btSua.TabIndex = 14;
             this.btSua.Text = "Sửa ";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -321,11 +325,32 @@
             this.Active.Name = "Active";
             this.Active.Width = 125;
             // 
+            // tbDiaChi
+            // 
+            this.tbDiaChi.Location = new System.Drawing.Point(221, 336);
+            this.tbDiaChi.Margin = new System.Windows.Forms.Padding(6);
+            this.tbDiaChi.Name = "tbDiaChi";
+            this.tbDiaChi.Size = new System.Drawing.Size(405, 32);
+            this.tbDiaChi.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 339);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 26);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Địa chỉ";
+            // 
             // QuanLyDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 855);
+            this.Controls.Add(this.tbDiaChi);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
@@ -383,5 +408,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Active;
+        private System.Windows.Forms.TextBox tbDiaChi;
+        private System.Windows.Forms.Label label7;
     }
 }
