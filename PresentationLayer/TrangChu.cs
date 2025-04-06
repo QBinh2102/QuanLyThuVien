@@ -110,6 +110,15 @@ namespace PresentationLayer
             }
         }
 
-     
+        private void tsmiQuyDinh_Click(object sender, EventArgs e)
+        {
+            if(qlQuyDinh == null || qlQuyDinh.IsDisposed)
+            {
+                qlQuyDinh = new ThayDoiQuyDinh();
+                qlQuyDinh.MdiParent = this;
+                pictureBox1.Controls.Add(qlQuyDinh);
+                qlQuyDinh.Show();
+            }
+        }
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="DocGiaBL.cs" />
     <Compile Include="NhanVienBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuyDinhBL.cs" />
     <Compile Include="SachBL.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
