@@ -12,10 +12,10 @@ namespace BusinessLayer
             quyDinhDL = new QuyDinhDL();
         }
 
-        public QuyDinh LayQuyDinh()
+        public QuyDinh GetQuyDinh()
         {
             QuyDinh q = new QuyDinh();
-            q = quyDinhDL.getQuyDinh();
+            q = quyDinhDL.GetQuyDinh();
             return new QuyDinh
             {
                 SoNgay = q.SoNgay,

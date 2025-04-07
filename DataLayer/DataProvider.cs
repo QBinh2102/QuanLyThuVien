@@ -11,7 +11,7 @@ namespace DataLayer
 {
    public class DataProvider
     {
-        public SqlConnection cn;
+        private SqlConnection cn;
         public DataProvider()
         {
             //string cnStr = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True;";

@@ -10,7 +10,7 @@ namespace DataLayer
         //public int SoNgay { get; private set; }
         //public int SoSach { get; private set; }
         
-        public QuyDinh getQuyDinh()
+        public QuyDinh GetQuyDinh()
         {
             QuyDinh q = new QuyDinh();
             string sql = "SELECT SoNgayTra, SoSachMuonToiDa FROM QuyDinh";
@@ -21,8 +21,8 @@ namespace DataLayer
 
                 if (reader.Read()) 
                 {
-                    q.SoNgay = reader.GetInt32(reader.GetOrdinal("SoNgayTra"));
-                    q.SoSach = reader.GetInt32(reader.GetOrdinal("SoSachMuonToiDa"));
+                    q.SoNgay = int.Parse(reader["SoNgayTra"].ToString());
+                    q.SoSach = int.Parse(reader["SoSachMuonToiDa"].ToString());
                 }
 
                 reader.Close();

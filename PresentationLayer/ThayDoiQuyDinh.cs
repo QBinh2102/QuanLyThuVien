@@ -19,7 +19,7 @@ namespace PresentationLayer
         {
             try
             {
-                QuyDinh qd = quyDinhBL.LayQuyDinh();
+                QuyDinh qd = quyDinhBL.GetQuyDinh();
 
                 tbSoNgayMuonToiDa.Text = qd.SoNgay.ToString();
                 tbSoSachMuonToiDa.Text = qd.SoSach.ToString();
