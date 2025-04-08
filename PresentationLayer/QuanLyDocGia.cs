@@ -162,6 +162,7 @@ namespace PresentationLayer
             tbEmail.Clear();
             tbDiaChi.Clear();
             tbTimKiem.Clear();
+            cbActive.Checked = false;
             dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
         }
 
@@ -178,5 +179,7 @@ namespace PresentationLayer
                 dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
             }
         }
+
+     
     }
 }

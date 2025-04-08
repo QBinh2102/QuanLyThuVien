@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 using DataLayer;
-using TransferObject; 
+using TransferObject;
 
 namespace BusinessLayer
 {
     public class NhanVienBL
     {
         private NhanVienDL nhanVienDL;
+
         public NhanVienBL()
         {
             nhanVienDL = new NhanVienDL();
@@ -27,7 +28,6 @@ namespace BusinessLayer
             {
                 throw ex;
             }
-
         }
 
         public List<NhanVien> TimKiemTheoTen(string keyword)
@@ -46,5 +46,40 @@ namespace BusinessLayer
             }
         }
 
+        public int AddNhanVien(NhanVien nv)
+        {
+            try
+            {
+                return nhanVienDL.AddNhanVien(nv);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int UpdateNhanVien(NhanVien nv)
+        {
+            try
+            {
+                return nhanVienDL.UpdateNhanVien(nv);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int DeleteNhanVien(string id)
+        {
+            try
+            {
+                return nhanVienDL.DeleteNhanVien(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

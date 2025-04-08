@@ -205,6 +205,7 @@
             this.btReset.TabIndex = 12;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
+            
             // 
             // btThem
             // 

@@ -49,11 +49,15 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tbQueQuan = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbActive = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -61,7 +65,7 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(717, 402);
+            this.btXoa.Location = new System.Drawing.Point(895, 402);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(116, 53);
             this.btXoa.TabIndex = 30;
@@ -70,7 +74,7 @@
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(541, 402);
+            this.btSua.Location = new System.Drawing.Point(773, 402);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(116, 53);
             this.btSua.TabIndex = 29;
@@ -79,21 +83,23 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(365, 402);
+            this.btThem.Location = new System.Drawing.Point(651, 402);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(116, 53);
             this.btThem.TabIndex = 28;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(190, 402);
+            this.btReset.Location = new System.Drawing.Point(529, 402);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(116, 53);
             this.btReset.TabIndex = 27;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // groupBox1
             // 
@@ -223,7 +229,8 @@
             this.Username,
             this.HoTen,
             this.SDT,
-            this.Email});
+            this.Email,
+            this.QueQuan});
             this.dgvNhanVien.Location = new System.Drawing.Point(22, 48);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
@@ -258,6 +265,23 @@
             this.label7.Size = new System.Drawing.Size(124, 29);
             this.label7.TabIndex = 32;
             this.label7.Text = "Username";
+            // 
+            // tbQueQuan
+            // 
+            this.tbQueQuan.Location = new System.Drawing.Point(201, 392);
+            this.tbQueQuan.Name = "tbQueQuan";
+            this.tbQueQuan.Size = new System.Drawing.Size(263, 38);
+            this.tbQueQuan.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(30, 398);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 29);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Quê quán";
             // 
             // ID
             // 
@@ -299,11 +323,32 @@
             this.Email.Name = "Email";
             this.Email.Width = 125;
             // 
+            // QueQuan
+            // 
+            this.QueQuan.DataPropertyName = "queQuan";
+            this.QueQuan.HeaderText = "Quê quán";
+            this.QueQuan.MinimumWidth = 6;
+            this.QueQuan.Name = "QueQuan";
+            this.QueQuan.Width = 125;
+            // 
+            // cbActive
+            // 
+            this.cbActive.AutoSize = true;
+            this.cbActive.Location = new System.Drawing.Point(390, 117);
+            this.cbActive.Name = "cbActive";
+            this.cbActive.Size = new System.Drawing.Size(114, 36);
+            this.cbActive.TabIndex = 20;
+            this.cbActive.Text = "Active";
+            this.cbActive.UseVisualStyleBackColor = true;
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 767);
+            this.Controls.Add(this.cbActive);
+            this.Controls.Add(this.tbQueQuan);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btXoa);
@@ -363,5 +408,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QueQuan;
+        private System.Windows.Forms.TextBox tbQueQuan;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox cbActive;
     }
 }
