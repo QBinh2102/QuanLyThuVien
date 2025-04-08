@@ -51,8 +51,7 @@ namespace DataLayer
         {
             string sql = "INSERT INTO DocGia (hoTen, email, soDienThoai, diaChi, ngayTao, active) " +
                          "VALUES (N'" + docGia.hoTen + "', '" + docGia.email + "', '" + docGia.soDienThoai + "'," +
-                         " N'"+docGia.diaChi+"', '"+docGia.ngayTao+"', '"+docGia.active+"')";
-            //@hoTen, @email, @soDienThoai, @diaChi, @ngayTao, @active
+                         " N'" + docGia.diaChi + "', '" + docGia.ngayTao + "', '" + docGia.active + "')";
             try
             {
                 return MyExecuteNonQuery(sql, CommandType.Text);
@@ -65,10 +64,8 @@ namespace DataLayer
 
         public int UpdateDocGia(DocGia docGia)
         {
-            //string sql = "UPDATE DocGia SET hoTen = N'" + docGia.hoTen + "', email = '" + docGia.email + "', soDienThoai = '" + docGia.soDienThoai + "'," +
-            //             "diaChi = N'" + docGia.diaChi + "' active = '" + docGia.active + "' WHERE id = '" + docGia.id + "'";
             string sql = "UPDATE DocGia SET hoTen = N'" + docGia.hoTen + "', email = '" + docGia.email + "', soDienThoai = '" + docGia.soDienThoai + "'," +
-                         "diaChi = N'" + docGia.diaChi + "' WHERE id = '" + docGia.id + "'";
+                         "diaChi = N'" + docGia.diaChi + "', active = '" + docGia.active + "' WHERE id = '" + docGia.id + "'";
             try
             {
                 return MyExecuteNonQuery(sql, CommandType.Text);
@@ -78,5 +75,23 @@ namespace DataLayer
                 throw ex;
             }
         }
+
+
+        public int DeleteDocGia(string id)
+        {
+            string sql = "DELETE FROM DocGia WHERE id = '" + id + "'";
+            try
+            {
+                return MyExecuteNonQuery(sql, CommandType.Text);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+
     }
 }

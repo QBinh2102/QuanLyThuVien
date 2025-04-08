@@ -16,7 +16,7 @@ namespace BusinessLayer
         private DocGiaDL docGiaDL;
         public DocGiaBL()
         {
-            docGiaDL = new DocGiaDL(); 
+            docGiaDL = new DocGiaDL();
         }
 
         public List<DocGia> GetAllDocGia()
@@ -36,7 +36,8 @@ namespace BusinessLayer
             try
             {
                 return docGiaDL.AddDocGia(docGia);
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -47,10 +48,42 @@ namespace BusinessLayer
             try
             {
                 return docGiaDL.UpdateDocGia(docGia);
-            }catch(SqlException ex)
+            }
+            catch (SqlException ex)
             {
                 throw ex;
             }
         }
+
+        public int DeleteDocGia(string id)
+        {
+            try
+            {
+                return docGiaDL.DeleteDocGia(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<DocGia> TimKiemTheoTen(string keyword)
+        {
+            List<DocGia> allDocGias = GetAllDocGia();
+
+            return allDocGias
+                .Where(dg => !string.IsNullOrWhiteSpace(dg.hoTen) &&
+                             dg.hoTen.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
+
+        public bool CheckEmail(string email)
+        {
+            return docGiaDL.GetAllDocGia().Any(d => d.email == email);
+        }
+
+
+
+
     }
 }

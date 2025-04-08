@@ -21,6 +21,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
             docGiaBL = new DocGiaBL();
+            tbMaDocGia.ReadOnly = true;
         }
 
         private void QuanLyDocGia_Load(object sender, EventArgs e)
@@ -40,17 +41,27 @@ namespace PresentationLayer
                 tbSDT.Text = row.Cells["SDT"].Value?.ToString();
                 tbEmail.Text = row.Cells["Email"].Value?.ToString();
                 tbDiaChi.Text = row.Cells["DiaChi"].Value?.ToString();
+                cbActive.Checked = Convert.ToBoolean(row.Cells["Active"].Value);
 
             }
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
+
             string hoTen = tbHoTen.Text.ToString();
             string email = tbEmail.Text.ToString();
             string sdt = tbSDT.Text.ToString();
             string diaChi = tbDiaChi.Text.ToString();
+
+            if (docGiaBL.CheckEmail(email))
+            {
+                MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             DocGia docGia = new DocGia();
+            docGia.id = id.ToString();
             docGia.hoTen = hoTen;
             docGia.email = email;
             docGia.soDienThoai = sdt;
@@ -59,9 +70,11 @@ namespace PresentationLayer
             docGia.active = true;
 
             int result = docGiaBL.AddDocGia(docGia);
-            if(result != 0)
+            if (result != 0)
             {
-                MessageBox.Show("Thêm độc giả thành công!","Độc giả",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Thêm độc giả thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+
             }
             else
             {
@@ -76,22 +89,93 @@ namespace PresentationLayer
             string email = tbEmail.Text.ToString();
             string sdt = tbSDT.Text.ToString();
             string diaChi = tbDiaChi.Text.ToString();
+            bool active = cbActive.Checked;
+
+
+            // Khi sửa chưa kiểm check Email với người khác 
+
+            //if (docGiaBL.CheckEmail(email))
+            //{
+            //    MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
             DocGia docGia = new DocGia();
             docGia.id = id;
             docGia.hoTen = hoTen;
             docGia.email = email;
             docGia.soDienThoai = sdt;
             docGia.diaChi = diaChi;
-            docGia.active = true;
+            docGia.active = active;
+
 
             int result = docGiaBL.UpdateDocGia(docGia);
             if (result != 0)
             {
                 MessageBox.Show("Cập nhật thông tin thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+
             }
             else
             {
-                MessageBox.Show(docGia.hoTen +"-"+ docGia.email + "-" + docGia.soDienThoai + "-" + docGia.diaChi, "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(docGia.hoTen + "-" + docGia.email + "-" + docGia.soDienThoai + "-" + docGia.diaChi, "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            string id = tbMaDocGia.Text.ToString();
+
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                MessageBox.Show("Vui lòng chọn độc giả để xóa.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa độc giả này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                int kq = docGiaBL.DeleteDocGia(id);
+                if (kq != 0)
+                {
+                    MessageBox.Show("Xóa độc giả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+                    tbMaDocGia.Clear();
+                    tbHoTen.Clear();
+                    tbSDT.Clear();
+                    tbEmail.Clear();
+                    tbDiaChi.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại. Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btReset_Click(object sender, EventArgs e)
+        {
+            tbMaDocGia.Clear();
+            tbHoTen.Clear();
+            tbSDT.Clear();
+            tbEmail.Clear();
+            tbDiaChi.Clear();
+            tbTimKiem.Clear();
+            dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+        }
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+            string keyword = tbTimKiem.Text.Trim();
+
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                dgvDocGia.DataSource = docGiaBL.TimKiemTheoTen(keyword);
+            }
+            else
+            {
+                dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
             }
         }
     }
