@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace PresentationLayer
     {
         private PhieuMuonBL phieuMuonBL;
         private QuyDinhBL quyDinhBL;
+        private string idTMP ="";
         public QuanLyMuonTraSach()
         {
             InitializeComponent();
@@ -82,11 +84,55 @@ namespace PresentationLayer
             int result = phieuMuonBL.AddPhieuMuon(phieuMuon);
             if(result != 0)
             {
+                tbMaDG.Clear();
+                tbHoTen.Clear();
+                tbSoSachDaMuon.Clear();
+                tbMaSach.Clear();
+                tbTenSach.Clear();
+                tbSoLuongSach.Clear();
                 MessageBox.Show("Mượn thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 MessageBox.Show("Mượn thất bại!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btCheckDocGia2_Click(object sender, EventArgs e)
+        {
+            string idDocGia = tbMaDG2.Text.ToString();
+            List<PhieuMuonSach> phieuMuons = phieuMuonBL.GetAllPhieuMuon(idDocGia);
+            dgvSachMuon.DataSource = phieuMuons;
+        }
+
+        private void dgvSachMuon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvSachMuon.Rows[e.RowIndex];
+
+                dtNgayMuon2.Value = Convert.ToDateTime(row.Cells["ngayMuon"].Value);
+                dtNgayTra2.Value = Convert.ToDateTime(row.Cells["ngayTra"].Value);
+                int henTra = DateTime.Now.Date.Subtract(dtNgayTra2.Value.Date).Days;
+                tbSoNgayTre.Text = henTra < 0 ? "0" : henTra.ToString();
+                int tienPhat = int.Parse(tbSoNgayTre.Text) * 10000;
+                tbTienPhat.Text = tienPhat.ToString("C0", new CultureInfo("vi-VN"));
+                idTMP = row.Cells["id"].Value.ToString();
+            }
+        }
+
+        private void btLuu2_Click(object sender, EventArgs e)
+        {
+            if(idTMP != "")
+            {
+                int result = phieuMuonBL.TraSach(idTMP);
+                if (result != 0)
+                {
+                    string idDocGia = tbMaDG2.Text.ToString();
+                    List<PhieuMuonSach> phieuMuons = phieuMuonBL.GetAllPhieuMuon(idDocGia);
+                    dgvSachMuon.DataSource = phieuMuons;
+                    MessageBox.Show("Trả sách thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }

@@ -52,5 +52,29 @@ namespace BusinessLayer
                 throw ex;
             }
         }
+
+        public List<PhieuMuonSach> GetAllPhieuMuon(string idDocGia)
+        {
+            try
+            {
+                return muonSachDL.GetAllPhieuMuon(idDocGia);
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int TraSach(string id)
+        {
+            try
+            {
+                return muonSachDL.TraSach(id);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
