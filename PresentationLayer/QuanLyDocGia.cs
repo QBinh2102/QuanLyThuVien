@@ -17,6 +17,7 @@ namespace PresentationLayer
     {
 
         private DocGiaBL docGiaBL;
+        private string emailTMP;
         public QuanLyDocGia()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace PresentationLayer
                 tbEmail.Text = row.Cells["Email"].Value?.ToString();
                 tbDiaChi.Text = row.Cells["DiaChi"].Value?.ToString();
                 cbActive.Checked = Convert.ToBoolean(row.Cells["Active"].Value);
+                emailTMP = tbEmail.Text;
 
             }
         }
@@ -94,11 +96,12 @@ namespace PresentationLayer
 
             // Khi sửa chưa kiểm check Email với người khác 
 
-            //if (docGiaBL.CheckEmail(email))
-            //{
-            //    MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
+            if (!emailTMP.Equals(email)) 
+            if (docGiaBL.CheckEmail(email))
+            {
+                MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             DocGia docGia = new DocGia();
             docGia.id = id;
@@ -114,6 +117,7 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Cập nhật thông tin thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+                emailTMP = tbEmail.Text;
 
             }
             else

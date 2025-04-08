@@ -96,5 +96,10 @@ namespace PresentationLayer
 
             }
         }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

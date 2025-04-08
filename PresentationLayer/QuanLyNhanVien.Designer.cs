@@ -46,17 +46,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tbUsername = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tbQueQuan = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbQueQuan = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.cbActive = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -80,6 +80,7 @@
             this.btSua.TabIndex = 29;
             this.btSua.Text = "Sửa ";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
@@ -239,50 +240,6 @@
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dgvNhanVien);
-            this.groupBox2.Location = new System.Drawing.Point(24, 481);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(986, 274);
-            this.groupBox2.TabIndex = 31;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Danh sách Nhân viên";
-            // 
-            // tbUsername
-            // 
-            this.tbUsername.Location = new System.Drawing.Point(201, 175);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(227, 38);
-            this.tbUsername.TabIndex = 33;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 181);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 29);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Username";
-            // 
-            // tbQueQuan
-            // 
-            this.tbQueQuan.Location = new System.Drawing.Point(201, 392);
-            this.tbQueQuan.Name = "tbQueQuan";
-            this.tbQueQuan.Size = new System.Drawing.Size(263, 38);
-            this.tbQueQuan.TabIndex = 35;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(30, 398);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 29);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Quê quán";
-            // 
             // ID
             // 
             this.ID.DataPropertyName = "ID";
@@ -330,6 +287,50 @@
             this.QueQuan.MinimumWidth = 6;
             this.QueQuan.Name = "QueQuan";
             this.QueQuan.Width = 125;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvNhanVien);
+            this.groupBox2.Location = new System.Drawing.Point(24, 481);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(986, 274);
+            this.groupBox2.TabIndex = 31;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Danh sách Nhân viên";
+            // 
+            // tbUsername
+            // 
+            this.tbUsername.Location = new System.Drawing.Point(201, 175);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(227, 38);
+            this.tbUsername.TabIndex = 33;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 181);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(124, 29);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Username";
+            // 
+            // tbQueQuan
+            // 
+            this.tbQueQuan.Location = new System.Drawing.Point(201, 392);
+            this.tbQueQuan.Name = "tbQueQuan";
+            this.tbQueQuan.Size = new System.Drawing.Size(263, 38);
+            this.tbQueQuan.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(30, 398);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 29);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Quê quán";
             // 
             // cbActive
             // 

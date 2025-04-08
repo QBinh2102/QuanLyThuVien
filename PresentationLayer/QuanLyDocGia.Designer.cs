@@ -205,7 +205,7 @@
             this.btReset.TabIndex = 12;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
-            
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // btThem
             // 
@@ -238,6 +238,7 @@
             this.btXoa.TabIndex = 15;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // groupBox2
             // 
