@@ -11,7 +11,7 @@ using TransferObject;
 
 namespace BusinessLayer
 {
-   public class TheLoaiSachBL
+    public class TheLoaiSachBL
     {
         private TheLoaiSachDL theLoaiSachDL;
 
@@ -30,7 +30,33 @@ namespace BusinessLayer
             {
                 throw ex;
             }
-
         }
+
+        public int AddTheLoai(TheLoaiSach theLoai)
+        {
+            return theLoaiSachDL.AddTheLoai(theLoai);
+        }
+
+        public int UpdateTheLoai(TheLoaiSach theLoai)
+        {
+            return theLoaiSachDL.UpdateTheLoai(theLoai);
+        }
+
+        public int DeleteTheLoai(string id)
+        {
+            return theLoaiSachDL.DeleteTheLoai(id);
+        }
+
+        public List<TheLoaiSach> TimKiemTheoTen(string keyword)
+        {
+            List<TheLoaiSach> all = GetAllTheLoaiSach();
+
+            return all
+                .Where(tl => !string.IsNullOrWhiteSpace(tl.TenTheLoai) &&
+                             tl.TenTheLoai.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+        }
+
     }
+
 }

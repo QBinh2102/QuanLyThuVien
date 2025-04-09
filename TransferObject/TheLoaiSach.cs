@@ -15,5 +15,10 @@ namespace TransferObject
             this.ID = ID;
             this.TenTheLoai = tenTheLoai;
         }
+
+        public TheLoaiSach(string tenTheLoai)
+        {
+            this.TenTheLoai = tenTheLoai;
+        }
     }
 }

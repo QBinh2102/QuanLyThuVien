@@ -37,7 +37,7 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btLuu = new System.Windows.Forms.Button();
-            this.btHuy = new System.Windows.Forms.Button();
+            this.btReset = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -54,7 +54,7 @@
             this.groupBox1.Size = new System.Drawing.Size(832, 158);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thêm thể loại";
+            this.groupBox1.Text = "Thông tin";
             // 
             // btThem
             // 
@@ -64,12 +64,13 @@
             this.btThem.TabIndex = 4;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // tbTheLoai
             // 
-            this.tbTheLoai.Location = new System.Drawing.Point(24, 72);
+            this.tbTheLoai.Location = new System.Drawing.Point(27, 73);
             this.tbTheLoai.Name = "tbTheLoai";
-            this.tbTheLoai.Size = new System.Drawing.Size(615, 38);
+            this.tbTheLoai.Size = new System.Drawing.Size(623, 38);
             this.tbTheLoai.TabIndex = 4;
             // 
             // label1
@@ -96,6 +97,7 @@
             this.btTimKiem.TabIndex = 3;
             this.btTimKiem.Text = "Tìm kiếm";
             this.btTimKiem.UseVisualStyleBackColor = true;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
             // btSua
             // 
@@ -105,6 +107,7 @@
             this.btSua.TabIndex = 4;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -114,6 +117,7 @@
             this.btXoa.TabIndex = 5;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btLuu
             // 
@@ -124,14 +128,15 @@
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
             // 
-            // btHuy
+            // btReset
             // 
-            this.btHuy.Location = new System.Drawing.Point(678, 336);
-            this.btHuy.Name = "btHuy";
-            this.btHuy.Size = new System.Drawing.Size(130, 62);
-            this.btHuy.TabIndex = 7;
-            this.btHuy.Text = "Hủy";
-            this.btHuy.UseVisualStyleBackColor = true;
+            this.btReset.Location = new System.Drawing.Point(678, 336);
+            this.btReset.Name = "btReset";
+            this.btReset.Size = new System.Drawing.Size(130, 62);
+            this.btReset.TabIndex = 7;
+            this.btReset.Text = "Reset";
+            this.btReset.UseVisualStyleBackColor = true;
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // groupBox2
             // 
@@ -152,6 +157,7 @@
             this.dgvTheLoaiSach.RowTemplate.Height = 24;
             this.dgvTheLoaiSach.Size = new System.Drawing.Size(840, 166);
             this.dgvTheLoaiSach.TabIndex = 0;
+            this.dgvTheLoaiSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTheLoaiSach_CellClick);
             // 
             // QuanLyTheLoaiSach
             // 
@@ -159,7 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 661);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btHuy);
+            this.Controls.Add(this.btReset);
             this.Controls.Add(this.btLuu);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
@@ -192,7 +198,7 @@
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.Button btHuy;
+        private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvTheLoaiSach;
     }
