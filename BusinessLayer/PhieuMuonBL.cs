@@ -46,6 +46,8 @@ namespace BusinessLayer
         {
             try
             {
+                muonSachDL.CapNhatSoSachConLaiTheoIdSach(phieuMuon.idSach, "-");
+                muonSachDL.CapNhatSoSachDangMuonTheoIdDocGia(phieuMuon.idDocGia, "+");
                 return muonSachDL.AddPhieuMuon(phieuMuon);
             }catch(SqlException ex)
             {
@@ -65,11 +67,14 @@ namespace BusinessLayer
             }
         }
 
-        public int TraSach(string id)
+        public int TraSach(string idPhieuMuon, string idDocGia)
         {
             try
             {
-                return muonSachDL.TraSach(id);
+                string idSach = muonSachDL.GetIdSachTheoIdPhieuMuon(idPhieuMuon).ToString();
+                muonSachDL.CapNhatSoSachConLaiTheoIdSach(idSach, "+");
+                muonSachDL.CapNhatSoSachDangMuonTheoIdDocGia(idDocGia, "-");
+                return muonSachDL.TraSach(idPhieuMuon);
             }
             catch (SqlException ex)
             {

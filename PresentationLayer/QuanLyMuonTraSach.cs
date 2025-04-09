@@ -18,7 +18,7 @@ namespace PresentationLayer
     {
         private PhieuMuonBL phieuMuonBL;
         private QuyDinhBL quyDinhBL;
-        private string idTMP ="";
+        private string idPhieuMuonTMP ="";
         public QuanLyMuonTraSach()
         {
             InitializeComponent();
@@ -117,18 +117,18 @@ namespace PresentationLayer
                 tbSoNgayTre.Text = henTra < 0 ? "0" : henTra.ToString();
                 int tienPhat = int.Parse(tbSoNgayTre.Text) * 10000;
                 tbTienPhat.Text = tienPhat.ToString("C0", new CultureInfo("vi-VN"));
-                idTMP = row.Cells["id"].Value.ToString();
+                idPhieuMuonTMP = row.Cells["id"].Value.ToString();
             }
         }
 
         private void btLuu2_Click(object sender, EventArgs e)
         {
-            if(idTMP != "")
+            string idDocGia = tbMaDG2.Text.ToString();
+            if (idPhieuMuonTMP != "")
             {
-                int result = phieuMuonBL.TraSach(idTMP);
+                int result = phieuMuonBL.TraSach(idPhieuMuonTMP, idDocGia);
                 if (result != 0)
                 {
-                    string idDocGia = tbMaDG2.Text.ToString();
                     List<PhieuMuonSach> phieuMuons = phieuMuonBL.GetAllPhieuMuon(idDocGia);
                     dgvSachMuon.DataSource = phieuMuons;
                     MessageBox.Show("Trả sách thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
