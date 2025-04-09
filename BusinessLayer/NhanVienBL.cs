@@ -81,5 +81,11 @@ namespace BusinessLayer
                 throw ex;
             }
         }
+
+
+        public bool CheckEmail(string email)
+        {
+            return nhanVienDL.GetAllNhanVien().Any(d => d.email == email);
+        }
     }
 }
