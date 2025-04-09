@@ -71,6 +71,7 @@
             this.btXoa.TabIndex = 30;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btSua
             // 
@@ -196,6 +197,7 @@
             // 
             this.tbMaNhanVien.Location = new System.Drawing.Point(201, 117);
             this.tbMaNhanVien.Name = "tbMaNhanVien";
+            this.tbMaNhanVien.ReadOnly = true;
             this.tbMaNhanVien.Size = new System.Drawing.Size(131, 38);
             this.tbMaNhanVien.TabIndex = 19;
             // 
