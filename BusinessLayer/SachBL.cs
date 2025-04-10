@@ -13,6 +13,7 @@ namespace BusinessLayer
     public class SachBL
     {
         private SachDL sachDL;
+
         public SachBL()
         {
             sachDL = new SachDL();
@@ -22,10 +23,46 @@ namespace BusinessLayer
         {
             try
             {
-               return sachDL.GetAllSach();
-                
+                return sachDL.GetAllSach();
             }
-            catch(SqlException ex) {
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int AddSach(Sach sach)
+        {
+            try
+            {
+                return sachDL.AddSach(sach);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int UpdateSach(Sach sach)
+        {
+            try
+            {
+                return sachDL.UpdateSach(sach);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int DeleteSach(string id)
+        {
+            try
+            {
+                return sachDL.DeleteSach(id);
+            }
+            catch (SqlException ex)
+            {
                 throw ex;
             }
         }
@@ -45,19 +82,5 @@ namespace BusinessLayer
                             s.tacGia.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
                 .ToList();
         }
-
-        //public List<Sach> TimKiemTheoTheLoai(string keyword)
-        //{
-        //    return GetAllSach()
-        //        .Where(s => s.tenTheLoai != null &&
-        //                    s.tenTheLoai.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
-        //        .ToList();
-        //}
-
-
-        //public List<Sach> TimKiemTheoTheLoai(string keyword)
-        //{
-        //    return GetAllSach().Where(s => s.TenTheLoai.Contains(keyword, StringComparison.OrdinalIgnoreCase)).ToList();
-        //}
     }
 }

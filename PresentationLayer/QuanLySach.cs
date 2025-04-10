@@ -17,6 +17,7 @@ namespace PresentationLayer
     public partial class QuanLySach : Form
     {
         private SachBL sachBL;
+        private string idSachTMP;
         private TheLoaiSachBL theLoaiSachBL;
         public QuanLySach()
         {
@@ -56,6 +57,8 @@ namespace PresentationLayer
                 tbSoLuongNhap.Text = row.Cells["SoLuong"].Value?.ToString();
                 tbSoLuongConLai.Text = row.Cells["SoLuongConLai"].Value?.ToString();
                 tbGiaBia.Text = row.Cells["GiaBia"].Value?.ToString();
+
+                idSachTMP = row.Cells["idTheLoai"].Value?.ToString();
             }
         }
 
@@ -94,7 +97,105 @@ namespace PresentationLayer
 
         private void btThem_Click(object sender, EventArgs e)
         {
+            Sach sach = new Sach();
+            sach.tenSach = tbTenSach.Text.Trim();
+            sach.tacGia = tbTacGia.Text.Trim();
+            sach.namXuatBan = tbNamXB.Text.Trim();
+            sach.soLuong = Convert.ToInt32(tbSoLuongNhap.Text);
+            sach.soLuongConLai = Convert.ToInt32(tbSoLuongConLai.Text);
+            sach.giaBia = Convert.ToDouble(tbGiaBia.Text);
+            sach.idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
+            sach.tenTheLoai = cbTheLoaiSach.Text;
 
+            int result = sachBL.AddSach(sach);
+            if (result != 0)
+            {
+                MessageBox.Show("Thêm sách thành công!", "Sách", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvSach.DataSource = sachBL.GetAllSach();
+            }
+            else
+            {
+                MessageBox.Show("Thêm sách thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbMaSach.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sách cần sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Sach sach = new Sach();
+            sach.id = tbMaSach.Text;
+            sach.tenSach = tbTenSach.Text.Trim();
+            sach.tacGia = tbTacGia.Text.Trim();
+            sach.namXuatBan = tbNamXB.Text.Trim();
+            sach.soLuong = Convert.ToInt32(tbSoLuongNhap.Text);
+            sach.soLuongConLai = Convert.ToInt32(tbSoLuongConLai.Text);
+            sach.giaBia = Convert.ToDouble(tbGiaBia.Text);
+            sach.idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
+            sach.tenTheLoai = cbTheLoaiSach.Text;
+
+            int result = sachBL.UpdateSach(sach);
+            if (result != 0)
+            {
+                MessageBox.Show("Cập nhật sách thành công!", "Sách", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgvSach.DataSource = sachBL.GetAllSach();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbMaSach.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sách cần xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirm = MessageBox.Show("Bạn có chắc muốn xóa sách này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
+            {
+                string id = tbMaSach.Text;
+                int result = sachBL.DeleteSach(id);
+
+                if (result != 0)
+                {
+                    MessageBox.Show("Xóa sách thành công!", "Sách", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvSach.DataSource = sachBL.GetAllSach();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa sách thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btReset_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+        private void ResetForm()
+        {
+            tbMaSach.Clear();
+            tbTenSach.Clear();
+            tbTacGia.Clear();
+            tbNamXB.Clear();
+            tbSoLuongNhap.Clear();
+            tbSoLuongConLai.Clear();
+            tbGiaBia.Clear();
+            tbTimKiem.Clear();
+
+            if (cbTheLoaiSach.Items.Count > 0)
+                cbTheLoaiSach.SelectedIndex = 0;
+
+            idSachTMP = null;
+            dgvSach.DataSource = sachBL.GetAllSach();
         }
     }
 }

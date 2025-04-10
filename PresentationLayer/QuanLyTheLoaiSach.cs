@@ -39,8 +39,8 @@ namespace PresentationLayer
                 return;
             }
 
-            string newID = Guid.NewGuid().ToString(); // Tạo ID ngẫu nhiên (hoặc sinh theo cách khác nếu bạn muốn)
-            TheLoaiSach theLoai = new TheLoaiSach(newID, tbTheLoai.Text.Trim());
+           
+            TheLoaiSach theLoai = new TheLoaiSach(tbTheLoai.Text.Trim());
 
             int result = theLoaiSachBL.AddTheLoai(theLoai);
             if (result > 0)

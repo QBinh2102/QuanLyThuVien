@@ -17,12 +17,15 @@ namespace TransferObject
         public int soLuongConLai { get; set; }
         public double giaBia { get; set; }
 
-       
-        public Sach(string id, string tenSach, string tacGia, string tenTheLoai, string namXuatBan, int soLuong, int soLuongConLai, double giaBia)
+        public string idTheLoai { get; set; }
+
+        public Sach() { }
+        public Sach(string id, string tenSach, string tacGia, string idTheLoai, string tenTheLoai, string namXuatBan, int soLuong, int soLuongConLai, double giaBia)
         {
             this.id = id;
             this.tenSach = tenSach;
             this.tacGia = tacGia;
+            this.idTheLoai = idTheLoai;
             this.tenTheLoai = tenTheLoai;
             this.namXuatBan = namXuatBan;
             this.soLuong = soLuong;
