@@ -8,25 +8,44 @@ namespace PresentationLayer
     public partial class ThayDoiQuyDinh : Form
     {
         QuyDinhBL quyDinhBL;
+        QuyDinh quyDinh;
 
         public ThayDoiQuyDinh()
         {
             InitializeComponent();
             quyDinhBL = new QuyDinhBL();
+            quyDinh = new QuyDinh();
         }
 
         private void ThayDoiQuyDinh_Load(object sender, EventArgs e)
         {
             try
             {
-                QuyDinh qd = quyDinhBL.GetQuyDinh();
+                quyDinh = quyDinhBL.GetQuyDinh();
 
-                tbSoNgayMuonToiDa.Text = qd.SoNgay.ToString();
-                tbSoSachMuonToiDa.Text = qd.SoSach.ToString();
+                tbSoNgayMuonToiDa.Text = quyDinh.SoNgay.ToString();
+                tbSoSachMuonToiDa.Text = quyDinh.SoSach.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải quy định: " + ex.Message);
+            }
+        }
+
+        private void btLuu_Click(object sender, EventArgs e)
+        {
+            int soSach = int.Parse(tbSoSachMuonToiDa.Text.ToString());
+            int soNgay = int.Parse(tbSoNgayMuonToiDa.Text.ToString());
+            quyDinh.SoSach = soSach;
+            quyDinh.SoNgay = soNgay;
+            int result = quyDinhBL.UpdateQuyDinh(quyDinh);
+            if(result != 0)
+            {
+                MessageBox.Show("Thay đổi quy định thành công!", "Quy Định", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Thay đổi quy định thất bại!", "Quy Định", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

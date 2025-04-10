@@ -7,9 +7,6 @@ namespace DataLayer
 {
     public class QuyDinhDL : DataProvider
     {
-        //public int SoNgay { get; private set; }
-        //public int SoSach { get; private set; }
-        
         public QuyDinh GetQuyDinh()
         {
             QuyDinh q = new QuyDinh();
@@ -38,6 +35,23 @@ namespace DataLayer
             }
         }
 
-
+        public int UpdateQuyDinh(QuyDinh quyDinh)
+        {
+            string sql = "UPDATE QuyDinh SET soNgayTra = '" + quyDinh.SoNgay + "', soSachMuonToiDa = '" + quyDinh.SoSach + "' " +
+                "WHERE id = 1";
+            try
+            {
+                Connect();
+                return MyExecuteNonQuery(sql, CommandType.Text);
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DisConnect();
+            }
+        }
     }
 }

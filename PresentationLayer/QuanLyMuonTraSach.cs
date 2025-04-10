@@ -18,12 +18,14 @@ namespace PresentationLayer
     {
         private PhieuMuonBL phieuMuonBL;
         private QuyDinhBL quyDinhBL;
+        private QuyDinh quyDinh;
         private string idPhieuMuonTMP ="";
         public QuanLyMuonTraSach()
         {
             InitializeComponent();
             phieuMuonBL = new PhieuMuonBL();
             quyDinhBL = new QuyDinhBL();
+            quyDinh = new QuyDinh();
         }
 
         private void btCheckDocGia_Click(object sender, EventArgs e)
@@ -62,39 +64,47 @@ namespace PresentationLayer
 
         private void QuanLyMuonTraSach_Load(object sender, EventArgs e)
         {
-            QuyDinh quyDinh = quyDinhBL.GetQuyDinh();
+            quyDinh = quyDinhBL.GetQuyDinh();
             DateTime ngayMuon = dtNgayMuon.Value;
             dtNgayTra.Value = ngayMuon.AddDays(quyDinh.SoNgay);
         }
 
         private void btLuu_Click(object sender, EventArgs e)
         {
-            string idDocGia = tbMaDG.Text.ToString();
-            string idSach = tbMaSach.Text.ToString();
-            string idNhanVien = UserService.Instance.Acc.Id;
-            DateTime ngayMuon = dtNgayMuon.Value;
-            DateTime ngayTra = dtNgayTra.Value;
-            PhieuMuon phieuMuon = new PhieuMuon();
-            phieuMuon.idDocGia = idDocGia;
-            phieuMuon.idSach = idSach;
-            phieuMuon.idNhanVien = idNhanVien;
-            phieuMuon.ngayMuon = ngayMuon.ToString("yyyy-MM-dd");
-            phieuMuon.ngayTra = ngayTra.ToString("yyyy-MM-dd");
-
-            int result = phieuMuonBL.AddPhieuMuon(phieuMuon);
-            if(result != 0)
+            int soSachDangMuon = int.Parse(tbSoSachDaMuon.Text.ToString());
+            if (soSachDangMuon < quyDinh.SoSach)
             {
-                tbMaDG.Clear();
-                tbHoTen.Clear();
-                tbSoSachDaMuon.Clear();
-                tbMaSach.Clear();
-                tbTenSach.Clear();
-                tbSoLuongSach.Clear();
-                MessageBox.Show("Mượn thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string idDocGia = tbMaDG.Text.ToString();
+                string idSach = tbMaSach.Text.ToString();
+                string idNhanVien = UserService.Instance.Acc.Id;
+                DateTime ngayMuon = dtNgayMuon.Value;
+                DateTime ngayTra = dtNgayTra.Value;
+                PhieuMuon phieuMuon = new PhieuMuon();
+                phieuMuon.idDocGia = idDocGia;
+                phieuMuon.idSach = idSach;
+                phieuMuon.idNhanVien = idNhanVien;
+                phieuMuon.ngayMuon = ngayMuon.ToString("yyyy-MM-dd");
+                phieuMuon.ngayTra = ngayTra.ToString("yyyy-MM-dd");
+
+                int result = phieuMuonBL.AddPhieuMuon(phieuMuon);
+                if (result != 0)
+                {
+                    tbMaDG.Clear();
+                    tbHoTen.Clear();
+                    tbSoSachDaMuon.Clear();
+                    tbMaSach.Clear();
+                    tbTenSach.Clear();
+                    tbSoLuongSach.Clear();
+                    MessageBox.Show("Mượn thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Mượn thất bại!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Mượn thất bại!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã đạt giới hạn số sách đang mượn!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

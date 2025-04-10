@@ -1,4 +1,5 @@
-﻿using DataLayer;
+﻿using System.Data.SqlClient;
+using DataLayer;
 using TransferObject;
 
 namespace BusinessLayer
@@ -21,6 +22,18 @@ namespace BusinessLayer
                 SoNgay = q.SoNgay,
                 SoSach = q.SoSach
             };
+        }
+
+        public int UpdateQuyDinh(QuyDinh quyDinh)
+        {
+            try
+            {
+                return quyDinhDL.UpdateQuyDinh(quyDinh);
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -53,7 +53,7 @@
             // 
             this.tbSoSachMuonToiDa.Location = new System.Drawing.Point(280, 105);
             this.tbSoSachMuonToiDa.Name = "tbSoSachMuonToiDa";
-            this.tbSoSachMuonToiDa.Size = new System.Drawing.Size(148, 38);
+            this.tbSoSachMuonToiDa.Size = new System.Drawing.Size(148, 32);
             this.tbSoSachMuonToiDa.TabIndex = 4;
             // 
             // label2
@@ -62,7 +62,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(28, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 29);
+            this.label2.Size = new System.Drawing.Size(183, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Số sách mượn tối đa";
             // 
@@ -70,7 +70,7 @@
             // 
             this.tbSoNgayMuonToiDa.Location = new System.Drawing.Point(280, 169);
             this.tbSoNgayMuonToiDa.Name = "tbSoNgayMuonToiDa";
-            this.tbSoNgayMuonToiDa.Size = new System.Drawing.Size(148, 38);
+            this.tbSoNgayMuonToiDa.Size = new System.Drawing.Size(148, 32);
             this.tbSoNgayMuonToiDa.TabIndex = 6;
             // 
             // label3
@@ -79,7 +79,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(28, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 29);
+            this.label3.Size = new System.Drawing.Size(184, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Số ngày mượn tối đa";
             // 
@@ -91,10 +91,11 @@
             this.btLuu.TabIndex = 7;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // ThayDoiQuyDinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 268);
             this.Controls.Add(this.btLuu);
