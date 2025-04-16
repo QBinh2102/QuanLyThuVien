@@ -12,15 +12,6 @@ namespace PresentationLayer
 {
     public partial class TrangChu : Form
     {
-        private ThongTin tt = null;
-        private QuanLyDocGia qlDocGia = null;
-        private QuanLySach qlSach = null;
-        private QuanLyNhanVien qlNhanVien = null;
-        private QuanLyMuonTraSach qlMuonTraSach = null;
-        private ThayDoiQuyDinh qlQuyDinh = null;
-        private QuanLyTheLoaiSach qlTheLoaiSach = null;
-       
-
         public TrangChu()
         {
             InitializeComponent();
@@ -42,83 +33,59 @@ namespace PresentationLayer
             }
         }
 
+        private void AddForm(Form form)
+        {
+            form.TopLevel = false;
+
+            pictureBox1.Controls.Clear();
+            pictureBox1.Controls.Add(form);
+
+            form.Show();
+            form.FormBorderStyle = FormBorderStyle.Fixed3D;
+        }
+
         private void tsmiThongTin_Click(object sender, EventArgs e)
         {
-            if (tt == null || tt.IsDisposed)
-            {
-                tt = new ThongTin();
-                tt.MdiParent = this;
-                pictureBox1.Controls.Add(tt);
-                tt.Show();
-            }
+            ThongTin thongTin = new ThongTin();
+            AddForm(thongTin);
         }
 
         private void tsmiQLDocGia_Click(object sender, EventArgs e)
         {
-            if (qlDocGia == null || qlDocGia.IsDisposed)
-            {
-                qlDocGia = new QuanLyDocGia();
-                qlDocGia.MdiParent = this;
-                pictureBox1.Controls.Add(qlDocGia);
-                qlDocGia.Show();
-            }
+            QuanLyDocGia qlDocGia = new QuanLyDocGia();
+            AddForm(qlDocGia);
         }
 
         private void tsmiQLSach_Click(object sender, EventArgs e)
         {
-            if (qlSach == null || qlSach.IsDisposed)
-            {
-                qlSach = new QuanLySach();
-                qlSach.MdiParent = this;
-                pictureBox1.Controls.Add(qlSach);
-                qlSach.Show();
-            }
+            QuanLySach qlSach = new QuanLySach();
+            AddForm(qlSach);
         }
 
         private void tsmiQLNhanVien_Click(object sender, EventArgs e)
         {
-            if (qlNhanVien == null || qlNhanVien.IsDisposed)
-            {
-                qlNhanVien = new QuanLyNhanVien();
-                qlNhanVien.MdiParent = this;
-                pictureBox1.Controls.Add(qlNhanVien);
-                qlNhanVien.Show();
-            }
+            QuanLyNhanVien qlNhanVien = new QuanLyNhanVien();
+            AddForm(qlNhanVien);
         }
 
 
 
         private void tsmiQLTheLoai_Click(object sender, EventArgs e)
         {
-            if (qlTheLoaiSach == null || qlTheLoaiSach.IsDisposed)
-            {
-                qlTheLoaiSach = new QuanLyTheLoaiSach();
-                qlTheLoaiSach.MdiParent = this;
-                pictureBox1.Controls.Add(qlTheLoaiSach);
-                qlTheLoaiSach.Show();
-            }
+            QuanLyTheLoaiSach qlTheLoaiSach = new QuanLyTheLoaiSach();
+            AddForm(qlTheLoaiSach);
         }
 
         private void tsmiMuonTra_Click(object sender, EventArgs e)
         {
-            if (qlMuonTraSach == null || qlMuonTraSach.IsDisposed)
-            {
-                qlMuonTraSach = new QuanLyMuonTraSach();
-                qlMuonTraSach.MdiParent = this;
-                pictureBox1.Controls.Add(qlMuonTraSach);
-                qlMuonTraSach.Show();
-            }
+            QuanLyMuonTraSach qlMuonTraSach = new QuanLyMuonTraSach();
+            AddForm(qlMuonTraSach);
         }
 
         private void tsmiQuyDinh_Click(object sender, EventArgs e)
         {
-            if(qlQuyDinh == null || qlQuyDinh.IsDisposed)
-            {
-                qlQuyDinh = new ThayDoiQuyDinh();
-                qlQuyDinh.MdiParent = this;
-                pictureBox1.Controls.Add(qlQuyDinh);
-                qlQuyDinh.Show();
-            }
+            ThayDoiQuyDinh qlQuyDinh = new ThayDoiQuyDinh();
+            AddForm(qlQuyDinh);
         }
     }
 }

@@ -11,35 +11,6 @@ namespace DataLayer
 {
     public class PhieuMuonDL:DataProvider
     {
-        public List<string> GetThongTinDocGia(string id)
-        {
-            List<string> arr = new List<string>();
-            string sql = "SELECT hoTen, soSachDangMuon FROM DocGia WHERE id = '" + id + "'";
-
-            try
-            {
-                Connect();
-                SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
-                if (reader.Read())
-                {
-                    arr.Add(reader["hoTen"].ToString());
-                    arr.Add(reader["soSachDangMuon"].ToString());
-                }
-                else
-                {
-                    arr = null;
-                }
-                reader.Close();
-                return arr;
-            }catch(SqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                DisConnect();
-            }
-        }
 
         public List<string> GetThongTinSach(string id)
         {

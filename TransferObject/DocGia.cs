@@ -16,9 +16,10 @@ namespace TransferObject
 
         public DateTime ngayTao { get; set; }
         public bool active { get; set; }
+        public string soSachDangMuon { get; set; }
 
         public DocGia() { }
-        public DocGia(string id, string hoTen, string email, string soDienThoai, string diaChi, DateTime ngayTao, bool active)
+        public DocGia(string id, string hoTen, string email, string soDienThoai, string diaChi, DateTime ngayTao, bool active, string soSachDangMuon)
         {
             this.id = id;
             this.hoTen = hoTen;
@@ -27,6 +28,7 @@ namespace TransferObject
             this.diaChi = diaChi;
             this.ngayTao = ngayTao;
             this.active = active;
+            this.soSachDangMuon = soSachDangMuon;
         }
     }
 }

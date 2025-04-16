@@ -31,11 +31,11 @@ namespace PresentationLayer
         private void btCheckDocGia_Click(object sender, EventArgs e)
         {
             string id = tbMaDG.Text.ToString();
-            List<string> arr = phieuMuonBL.GetThongTinDocGia(id);
-            if(arr != null)
+            DocGia docGia = phieuMuonBL.GetThongTinDocGia(id);
+            if(docGia != null)
             {
-                tbHoTen.Text = arr[0];
-                tbSoSachDaMuon.Text = arr[1];
+                tbHoTen.Text = docGia.hoTen;
+                tbSoSachDaMuon.Text = docGia.soSachDangMuon;
             }
             else
             {

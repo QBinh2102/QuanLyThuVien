@@ -41,9 +41,9 @@
             this.tsmiQLNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMuonTra = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThongKe = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQuyDinh = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tsmiQuyDinh = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +85,7 @@
             // tsmiThongTin
             // 
             this.tsmiThongTin.Name = "tsmiThongTin";
-            this.tsmiThongTin.Size = new System.Drawing.Size(89, 20);
+            this.tsmiThongTin.Size = new System.Drawing.Size(72, 20);
             this.tsmiThongTin.Text = "Thông Tin";
             this.tsmiThongTin.Click += new System.EventHandler(this.tsmiThongTin_Click);
             // 
@@ -100,69 +100,76 @@
             this.toolStripSeparator3,
             this.tsmiQLNhanVien});
             this.tsmiDanhMuc.Name = "tsmiDanhMuc";
-            this.tsmiDanhMuc.Size = new System.Drawing.Size(146, 20);
+            this.tsmiDanhMuc.Size = new System.Drawing.Size(120, 20);
             this.tsmiDanhMuc.Text = "Quản Lý Danh Mục";
             // 
             // tsmiQLDocGia
             // 
             this.tsmiQLDocGia.Name = "tsmiQLDocGia";
-            this.tsmiQLDocGia.Size = new System.Drawing.Size(220, 26);
+            this.tsmiQLDocGia.Size = new System.Drawing.Size(178, 22);
             this.tsmiQLDocGia.Text = "Quản Lý Độc Giả";
             this.tsmiQLDocGia.Click += new System.EventHandler(this.tsmiQLDocGia_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
             // 
             // tsmiQLSach
             // 
             this.tsmiQLSach.Name = "tsmiQLSach";
-            this.tsmiQLSach.Size = new System.Drawing.Size(220, 26);
+            this.tsmiQLSach.Size = new System.Drawing.Size(178, 22);
             this.tsmiQLSach.Text = "Quản Lý Sách";
             this.tsmiQLSach.Click += new System.EventHandler(this.tsmiQLSach_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
             // 
             // tsmiQLTheLoai
             // 
             this.tsmiQLTheLoai.Name = "tsmiQLTheLoai";
-            this.tsmiQLTheLoai.Size = new System.Drawing.Size(220, 26);
+            this.tsmiQLTheLoai.Size = new System.Drawing.Size(178, 22);
             this.tsmiQLTheLoai.Text = "Quản Lý Thể Loại";
             this.tsmiQLTheLoai.Click += new System.EventHandler(this.tsmiQLTheLoai_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(175, 6);
             // 
             // tsmiQLNhanVien
             // 
             this.tsmiQLNhanVien.Name = "tsmiQLNhanVien";
-            this.tsmiQLNhanVien.Size = new System.Drawing.Size(220, 26);
+            this.tsmiQLNhanVien.Size = new System.Drawing.Size(178, 22);
             this.tsmiQLNhanVien.Text = "Quản Lý Nhân Viên ";
             this.tsmiQLNhanVien.Click += new System.EventHandler(this.tsmiQLNhanVien_Click);
             // 
             // tsmiMuonTra
             // 
             this.tsmiMuonTra.Name = "tsmiMuonTra";
-            this.tsmiMuonTra.Size = new System.Drawing.Size(152, 20);
+            this.tsmiMuonTra.Size = new System.Drawing.Size(123, 20);
             this.tsmiMuonTra.Text = "Quản Lý Mượn - Trả";
             this.tsmiMuonTra.Click += new System.EventHandler(this.tsmiMuonTra_Click);
             // 
             // tsmiThongKe
             // 
             this.tsmiThongKe.Name = "tsmiThongKe";
-            this.tsmiThongKe.Size = new System.Drawing.Size(156, 20);
+            this.tsmiThongKe.Size = new System.Drawing.Size(124, 20);
             this.tsmiThongKe.Text = "Báo Cáo - Thống Kê";
+            // 
+            // tsmiQuyDinh
+            // 
+            this.tsmiQuyDinh.Name = "tsmiQuyDinh";
+            this.tsmiQuyDinh.Size = new System.Drawing.Size(114, 20);
+            this.tsmiQuyDinh.Text = "Thay đổi quy định";
+            this.tsmiQuyDinh.Click += new System.EventHandler(this.tsmiQuyDinh_Click);
             // 
             // tsmiThoat
             // 
             this.tsmiThoat.Name = "tsmiThoat";
-            this.tsmiThoat.Size = new System.Drawing.Size(61, 20);
+            this.tsmiThoat.Size = new System.Drawing.Size(49, 20);
             this.tsmiThoat.Text = "Thoát";
             // 
             // pictureBox1
@@ -178,16 +185,9 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // tsmiQuyDinh
-            // 
-            this.tsmiQuyDinh.Name = "tsmiQuyDinh";
-            this.tsmiQuyDinh.Size = new System.Drawing.Size(141, 20);
-            this.tsmiQuyDinh.Text = "Thay đổi quy định";
-            this.tsmiQuyDinh.Click += new System.EventHandler(this.tsmiQuyDinh_Click);
-            // 
             // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 629);
             this.Controls.Add(this.pictureBox1);

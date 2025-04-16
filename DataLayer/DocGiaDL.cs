@@ -15,7 +15,7 @@ namespace DataLayer
         {
             List<DocGia> docGias = new List<DocGia>();
             //string sql = "SELECT * FROM DocGia";
-            string sql = "SELECT id, hoTen, email, soDienThoai, diaChi, CAST(ngayTao AS DATE) AS ngayTao, active FROM DocGia";
+            string sql = "SELECT id, hoTen, email, soDienThoai, diaChi, CAST(ngayTao AS DATE) AS ngayTao, active, soSachDangMuon FROM DocGia";
 
             try
             {
@@ -30,8 +30,9 @@ namespace DataLayer
                     string diaChi = reader["diaChi"].ToString();
                     DateTime ngayTao = Convert.ToDateTime(reader["ngayTao"]);
                     bool active = Convert.ToBoolean(reader["active"]);
+                    string soSachDangMuon = reader["soSachDangMuon"].ToString();
 
-                    DocGia docGia = new DocGia(id, hoTen, email, soDienThoai, diaChi, ngayTao, active);
+                    DocGia docGia = new DocGia(id, hoTen, email, soDienThoai, diaChi, ngayTao, active, soSachDangMuon);
                     docGias.Add(docGia);
                 }
                 reader.Close();
@@ -90,5 +91,40 @@ namespace DataLayer
             }
         }
 
+        public DocGia GetDocGiaTheoId(string idDocGia)
+        {
+            DocGia docGia = new DocGia();
+            string sql = "SELECT * FROM DocGia WHERE id = '" + idDocGia + "'";
+            try
+            {
+                Connect();
+                SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
+                if (reader.Read())
+                {
+                    docGia.id = idDocGia;
+                    docGia.hoTen = reader["hoTen"].ToString();
+                    docGia.email = reader["email"].ToString();
+                    docGia.soDienThoai = reader["soDienThoai"].ToString();
+                    docGia.diaChi = reader["diaChi"].ToString();
+                    docGia.ngayTao = Convert.ToDateTime(reader["ngayTao"]);
+                    docGia.active = Convert.ToBoolean(reader["active"]);
+                    docGia.soSachDangMuon = reader["soSachDangMuon"].ToString();
+                }
+                else
+                {
+                    docGia = null;
+                }
+                reader.Close();
+                return docGia;
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DisConnect();
+            }
+        }
     }
 }

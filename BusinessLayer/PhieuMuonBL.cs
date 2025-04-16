@@ -13,16 +13,18 @@ namespace BusinessLayer
     public class PhieuMuonBL
     {
         private PhieuMuonDL muonSachDL;
+        private DocGiaDL docGiaDL;
         public PhieuMuonBL()
         {
             muonSachDL = new PhieuMuonDL();
+            docGiaDL = new DocGiaDL();
         }
 
-        public List<string> GetThongTinDocGia(string id)
+        public DocGia GetThongTinDocGia(string id)
         {
             try
             {
-                return muonSachDL.GetThongTinDocGia(id);
+                return docGiaDL.GetDocGiaTheoId(id);
             }
             catch (SqlException ex)
             {
