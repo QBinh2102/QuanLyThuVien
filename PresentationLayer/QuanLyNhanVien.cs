@@ -26,6 +26,10 @@ namespace PresentationLayer
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
             dgvNhanVien.DataSource = nhanVienBL.GetAllNhanVien();
+            if (dgvNhanVien.Columns["password"] != null)
+            {
+                dgvNhanVien.Columns["password"].Visible = false;
+            }
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
