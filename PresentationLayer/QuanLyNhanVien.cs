@@ -30,6 +30,8 @@ namespace PresentationLayer
             {
                 dgvNhanVien.Columns["password"].Visible = false;
             }
+            cbVaiTro.Items.Add("Nhân viên");  
+            cbVaiTro.Items.Add("Quản trị");
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -47,7 +49,8 @@ namespace PresentationLayer
                 tbQueQuan.Text = row.Cells["queQuan"].Value?.ToString();
                 cbActive.Checked = Convert.ToBoolean(row.Cells["Active"].Value);
                 emailTMP = tbEmail.Text;
-
+                int vaiTro = Convert.ToInt32(row.Cells["vaiTro"].Value);
+                cbVaiTro.SelectedIndex = vaiTro;
             }
         }
 
@@ -87,7 +90,7 @@ namespace PresentationLayer
             nv.username = tbUsername.Text;
             nv.email = tbEmail.Text;
             nv.ngayTao = DateTime.Now;
-            nv.vaiTro = 0;
+            nv.vaiTro = cbVaiTro.SelectedIndex;
             nv.active = true;
             nv.password = "Demo@123";
 
@@ -126,6 +129,7 @@ namespace PresentationLayer
             nv.username = tbUsername.Text;
             nv.email = tbEmail.Text;
             nv.active = cbActive.Checked;
+            nv.vaiTro = cbVaiTro.SelectedIndex;
 
             if (!emailTMP.Equals(nv.email))
                 if (nhanVienBL.CheckEmail(nv.email))
