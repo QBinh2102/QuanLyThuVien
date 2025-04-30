@@ -51,6 +51,7 @@
     <Compile Include="QuyDinh.cs" />
     <Compile Include="Sach.cs" />
     <Compile Include="TheLoaiSach.cs" />
+    <Compile Include="ThongKeData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

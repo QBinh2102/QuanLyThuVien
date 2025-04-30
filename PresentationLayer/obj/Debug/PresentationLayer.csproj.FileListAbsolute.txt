@@ -39,3 +39,4 @@ C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyNhanVien.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyTheLoaiSach.resources
 C:\Users\GIGA\OneDrive\Tài liệu\Bài tập\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayDoiQuyDinh.resources
+C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongKe.resources

@@ -100,5 +100,11 @@ namespace PresentationLayer
             ThayDoiQuyDinh qlQuyDinh = new ThayDoiQuyDinh();
             AddForm(qlQuyDinh);
         }
+
+        private void tsmiThongKe_Click(object sender, EventArgs e)
+        {
+            ThongKe thongKe = new ThongKe();
+            AddForm(thongKe);
+        }
     }
 }
