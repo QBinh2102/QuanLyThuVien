@@ -11,14 +11,14 @@ namespace DataLayer
 {
     public class NhanVienData
     {
-        //private string _connectionString = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True"; // Thay thế bằng chuỗi kết nối thực tế
-        private string _connectionString = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True";
+        private string _connectionString = "Data Source=HSANG\\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True"; // Thay thế bằng chuỗi kết nối thực tế
+        //private string _connectionString = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True";
         public Account GetUserByUsernameAndPassword(string username, string password)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                string query = "SELECT id, hoTen, email, soDienThoai, queQuan FROM NhanVien WHERE username = @Username AND password = @Password"; // Lưu ý: Cần mã hóa mật khẩu trong CSDL
+                string query = "SELECT id, hoTen, email, soDienThoai, queQuan, vaiTro FROM NhanVien WHERE username = @Username AND password = @Password"; // Lưu ý: Cần mã hóa mật khẩu trong CSDL
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", username);
                 command.Parameters.AddWithValue("@Password", password); 
@@ -34,6 +34,7 @@ namespace DataLayer
                     user.Email = reader["email"].ToString();
                     user.Sdt = reader["soDienThoai"].ToString();
                     user.QueQuan = reader["queQuan"].ToString();
+                    user.VaiTro = Convert.ToInt32(reader["vaiTro"]);
                     return user;
                 }
             }

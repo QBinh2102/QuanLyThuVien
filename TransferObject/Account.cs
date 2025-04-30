@@ -15,9 +15,10 @@ namespace TransferObject
         private string email;
         private string sdt;
         private string queQuan;
+        private int vaiTro;
 
         public Account() { }
-        public Account(string id, string username, string password, string hoTen, string email, string sdt, string queQuan)
+        public Account(string id, string username, string password, string hoTen, string email, string sdt, string queQuan, int vaiTro)
         {
             this.id = id;
             this.username = username;
@@ -26,6 +27,7 @@ namespace TransferObject
             this.email = email;
             this.sdt = sdt;
             this.queQuan = queQuan;
+            this.vaiTro = vaiTro;
         }
 
         public string Id 
@@ -68,6 +70,12 @@ namespace TransferObject
         {
             get { return this.queQuan; }
             set { this.queQuan = value; }
+        }
+
+        public int VaiTro
+        {
+            get { return this.vaiTro; }
+            set { this.vaiTro = value; }
         }
     }
 }

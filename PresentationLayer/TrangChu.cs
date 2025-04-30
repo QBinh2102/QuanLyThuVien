@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,16 +65,28 @@ namespace PresentationLayer
 
         private void tsmiQLNhanVien_Click(object sender, EventArgs e)
         {
-            QuanLyNhanVien qlNhanVien = new QuanLyNhanVien();
-            AddForm(qlNhanVien);
+            if (UserService.Instance.Acc.VaiTro == 1)
+            {
+                QuanLyNhanVien qlNhanVien = new QuanLyNhanVien();
+                AddForm(qlNhanVien);
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này. Vui lòng liên hệ quản lý để được hỗ trợ.",
+                                "Thông báo",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
         }
 
 
 
         private void tsmiQLTheLoai_Click(object sender, EventArgs e)
         {
-            QuanLyTheLoaiSach qlTheLoaiSach = new QuanLyTheLoaiSach();
-            AddForm(qlTheLoaiSach);
+            
+                QuanLyTheLoaiSach qlTheLoaiSach = new QuanLyTheLoaiSach();
+                AddForm(qlTheLoaiSach);
+            
         }
 
         private void tsmiMuonTra_Click(object sender, EventArgs e)

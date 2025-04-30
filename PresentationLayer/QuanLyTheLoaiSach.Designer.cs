@@ -40,6 +40,8 @@
             this.btReset = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).BeginInit();
@@ -151,6 +153,9 @@
             // dgvTheLoaiSach
             // 
             this.dgvTheLoaiSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTheLoaiSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.tenTheLoai});
             this.dgvTheLoaiSach.Location = new System.Drawing.Point(6, 37);
             this.dgvTheLoaiSach.Name = "dgvTheLoaiSach";
             this.dgvTheLoaiSach.RowHeadersWidth = 51;
@@ -158,6 +163,22 @@
             this.dgvTheLoaiSach.Size = new System.Drawing.Size(840, 166);
             this.dgvTheLoaiSach.TabIndex = 0;
             this.dgvTheLoaiSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTheLoaiSach_CellClick);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.Width = 125;
+            // 
+            // tenTheLoai
+            // 
+            this.tenTheLoai.DataPropertyName = "tenTheLoai(none)";
+            this.tenTheLoai.HeaderText = "Tên thể loại";
+            this.tenTheLoai.MinimumWidth = 6;
+            this.tenTheLoai.Name = "tenTheLoai";
+            this.tenTheLoai.Width = 250;
             // 
             // QuanLyTheLoaiSach
             // 
@@ -201,5 +222,7 @@
         private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvTheLoaiSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenTheLoai;
     }
 }
