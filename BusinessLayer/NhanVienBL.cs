@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,6 +87,18 @@ namespace BusinessLayer
         public bool CheckEmail(string email)
         {
             return nhanVienDL.GetAllNhanVien().Any(d => d.email == email);
+        }
+
+        public int ChangePassword(string id, string password)
+        {
+            try
+            {
+                return nhanVienDL.ChangePassword(id, password);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
     }
 }

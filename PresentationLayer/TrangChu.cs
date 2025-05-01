@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransferObject;
 
 namespace PresentationLayer
 {
     public partial class TrangChu : Form
     {
+        private NhanVien nhanVien {  get; set; }
         public TrangChu()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace PresentationLayer
             if(result == DialogResult.OK)
             {
                 Enabled = true;
+                nhanVien = dn.nhanVien;
             }
             else
             {
@@ -48,6 +51,7 @@ namespace PresentationLayer
         private void tsmiThongTin_Click(object sender, EventArgs e)
         {
             ThongTin thongTin = new ThongTin();
+            thongTin.nhanVien = nhanVien;
             AddForm(thongTin);
         }
 
@@ -65,7 +69,7 @@ namespace PresentationLayer
 
         private void tsmiQLNhanVien_Click(object sender, EventArgs e)
         {
-            if (UserService.Instance.Acc.VaiTro == 1)
+            if (nhanVien.vaiTro == 1)
             {
                 QuanLyNhanVien qlNhanVien = new QuanLyNhanVien();
                 AddForm(qlNhanVien);
@@ -79,26 +83,33 @@ namespace PresentationLayer
             }
         }
 
-
-
         private void tsmiQLTheLoai_Click(object sender, EventArgs e)
         {
-            
-                QuanLyTheLoaiSach qlTheLoaiSach = new QuanLyTheLoaiSach();
-                AddForm(qlTheLoaiSach);
-            
+            QuanLyTheLoaiSach qlTheLoaiSach = new QuanLyTheLoaiSach();
+            AddForm(qlTheLoaiSach);
         }
 
         private void tsmiMuonTra_Click(object sender, EventArgs e)
         {
             QuanLyMuonTraSach qlMuonTraSach = new QuanLyMuonTraSach();
+            qlMuonTraSach.nhanVien = nhanVien;
             AddForm(qlMuonTraSach);
         }
 
         private void tsmiQuyDinh_Click(object sender, EventArgs e)
         {
-            ThayDoiQuyDinh qlQuyDinh = new ThayDoiQuyDinh();
-            AddForm(qlQuyDinh);
+            if (nhanVien.vaiTro == 1)
+            {
+                ThayDoiQuyDinh qlQuyDinh = new ThayDoiQuyDinh();
+                AddForm(qlQuyDinh);
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này. Vui lòng liên hệ quản lý để được hỗ trợ.",
+                                "Thông báo",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
         }
 
         private void tsmiThongKe_Click(object sender, EventArgs e)

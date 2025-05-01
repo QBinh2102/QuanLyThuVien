@@ -100,15 +100,15 @@ namespace DataLayer
             }
         }
 
-        public int TraSach(string idPhieuMuon)
+        public int TraSach(string idPhieuMuon, string trangThai)
         {
-            string sql = "UPDATE MuonTraSach SET trangThai = 'da_tra' WHERE id = '" + idPhieuMuon + "'";
+            string sql = "UPDATE MuonTraSach SET trangThai = '" + trangThai + "' WHERE id = '" + idPhieuMuon + "'";
             try
             {
                 Connect();
                 return MyExecuteNonQuery(sql, CommandType.Text);
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 throw ex;
             }

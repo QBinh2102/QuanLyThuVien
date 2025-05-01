@@ -20,6 +20,7 @@ namespace PresentationLayer
         private QuyDinhBL quyDinhBL;
         private QuyDinh quyDinh;
         private string idPhieuMuonTMP ="";
+        public NhanVien nhanVien { get; set;}
         public QuanLyMuonTraSach()
         {
             InitializeComponent();
@@ -76,7 +77,7 @@ namespace PresentationLayer
             {
                 string idDocGia = tbMaDG.Text.ToString();
                 string idSach = tbMaSach.Text.ToString();
-                string idNhanVien = UserService.Instance.Acc.Id;
+                string idNhanVien = nhanVien.id;
                 DateTime ngayMuon = dtNgayMuon.Value;
                 DateTime ngayTra = dtNgayTra.Value;
                 PhieuMuon phieuMuon = new PhieuMuon();
@@ -136,9 +137,21 @@ namespace PresentationLayer
             string idDocGia = tbMaDG2.Text.ToString();
             if (idPhieuMuonTMP != "")
             {
-                int result = phieuMuonBL.TraSach(idPhieuMuonTMP, idDocGia);
+                string henTra = tbSoNgayTre.Text.ToString();
+                bool treHen;
+
+                if (henTra.Equals("0"))
+                    treHen = false;
+                else
+                    treHen = true;
+                int result = phieuMuonBL.TraSach(idPhieuMuonTMP, idDocGia, treHen);
                 if (result != 0)
                 {
+                    idPhieuMuonTMP = "";
+                    dtNgayMuon2.Value = DateTime.Now;
+                    dtNgayTra2.Value = DateTime.Now;
+                    tbSoNgayTre.Clear();
+                    tbTienPhat.Clear();
                     List<PhieuMuonSach> phieuMuons = phieuMuonBL.GetAllPhieuMuon(idDocGia);
                     dgvSachMuon.DataSource = phieuMuons;
                     MessageBox.Show("Trả sách thành công!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Information);

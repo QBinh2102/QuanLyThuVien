@@ -18,28 +18,13 @@ namespace PresentationLayer
     public partial class DangNhap : Form
     {
         SqlConnection cn;
+        private LoginBL loginBL;
+        public NhanVien nhanVien {  get; set; }
 
-        private readonly UserService _userService;
         public DangNhap()
         {
             InitializeComponent();
-            //string cnStr = "Data Source=.;Initial Catalog=librarydb;Integrated Security=True";
-            //cn = new SqlConnection(cnStr);
-
-            //_userService = new UserService();
-        }
-
-        private bool isLogin(string us, string pass)
-        {
-            string sqlStr = "SELECT COUNT(username) FROM NhanVien WHERE username = '" + us + "' and password = '" + pass + "'";
-            SqlCommand cmd = new SqlCommand(sqlStr, cn);
-            cmd.CommandType = CommandType.Text;
-            
-            
-            cn.Open();
-            int result = (int)cmd.ExecuteScalar();
-            cn.Close();
-            return (result>0);
+            loginBL = new LoginBL();
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -48,7 +33,9 @@ namespace PresentationLayer
             user = txtUsername.Text.Trim();
             pass = txtPassword.Text;
 
-            if (UserService.Instance.AuthenticateUser(user,pass))
+            nhanVien = loginBL.Login(user, pass);
+
+            if (nhanVien != null)
             {
                 this.DialogResult = DialogResult.OK;
             }

@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DocGia.cs" />
     <Compile Include="NhanVien.cs" />

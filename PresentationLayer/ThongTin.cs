@@ -16,22 +16,21 @@ namespace PresentationLayer
 {
     public partial class ThongTin : Form
     {
-        //private readonly UserService userService;
+        public NhanVien nhanVien {  get; set; }
         public ThongTin()
         {
             InitializeComponent();
-            //userService = new UserService();
         }
 
         private void ThongTin_Load(object sender, EventArgs e)
         {
-            if (UserService.Instance.Acc != null)
+            if (nhanVien != null)
             {
-                txtUser.Text = UserService.Instance.Acc.Username;
-                txtHoTen.Text = UserService.Instance.Acc.HoTen;
-                txtSDT.Text = UserService.Instance.Acc.Sdt;
-                txtEmail.Text = UserService.Instance.Acc.Email;
-                txtQueQuan.Text = UserService.Instance.Acc.QueQuan;
+                txtUser.Text = nhanVien.username;
+                txtHoTen.Text = nhanVien.hoTen;
+                txtSDT.Text = nhanVien.soDienThoai;
+                txtEmail.Text = nhanVien.email;
+                txtQueQuan.Text = nhanVien.queQuan;
             }
             else
             {
@@ -43,6 +42,7 @@ namespace PresentationLayer
         {
             using(ThayMatKhau tmk = new ThayMatKhau())
             {
+                tmk.nhanVien = nhanVien;
                 if(tmk.ShowDialog() == DialogResult.OK)
                 {
                     MessageBox.Show("Thay đổi mật khẩu thành công", "Mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.Information);

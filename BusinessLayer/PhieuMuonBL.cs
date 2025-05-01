@@ -69,14 +69,17 @@ namespace BusinessLayer
             }
         }
 
-        public int TraSach(string idPhieuMuon, string idDocGia)
+        public int TraSach(string idPhieuMuon, string idDocGia, bool treHen)
         {
             try
             {
                 string idSach = muonSachDL.GetIdSachTheoIdPhieuMuon(idPhieuMuon).ToString();
                 muonSachDL.CapNhatSoSachConLaiTheoIdSach(idSach, "+");
                 muonSachDL.CapNhatSoSachDangMuonTheoIdDocGia(idDocGia, "-");
-                return muonSachDL.TraSach(idPhieuMuon);
+                if (treHen)
+                    return muonSachDL.TraSach(idPhieuMuon, "tra_tre");
+                else
+                    return muonSachDL.TraSach(idPhieuMuon, "da_tra");
             }
             catch (SqlException ex)
             {

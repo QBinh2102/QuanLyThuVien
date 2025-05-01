@@ -12,3 +12,10 @@ C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\Busin
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\huynh\OneDrive\Desktop\Code\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\bin\Debug\BusinessLayer.dll
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\bin\Debug\BusinessLayer.pdb
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb

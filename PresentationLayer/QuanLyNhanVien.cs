@@ -107,10 +107,6 @@ namespace PresentationLayer
                 dgvNhanVien.DataSource = nhanVienBL.GetAllNhanVien();
 
             }
-            else
-            {
-
-            }
         }
 
         private void btSua_Click(object sender, EventArgs e)

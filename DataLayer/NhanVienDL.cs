@@ -90,5 +90,18 @@ namespace DataLayer
                 throw ex;
             }
         }
+
+        public int ChangePassword(string id, string password)
+        {
+            string sql = "UPDATE NhanVien SET password = '" + password + "' WHERE id = '" + id + "'";
+            try
+            {
+                return MyExecuteNonQuery(sql, CommandType.Text);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
