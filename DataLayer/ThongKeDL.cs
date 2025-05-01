@@ -25,12 +25,7 @@ namespace DataLayer
                       "GROUP BY DATEPART(QUARTER, ngayMuon) " +
                       "ORDER BY Label";
             }
-            else if (kieu == "Năm")
-            {
-                sql = "SELECT COUNT(*) AS SoLuong " +
-                      "FROM MuonTraSach " +
-                      "WHERE YEAR(ngayMuon) = @nam";
-            }
+         
 
             DataTable dt = new DataTable();
 
@@ -54,6 +49,51 @@ namespace DataLayer
             finally
             {
                 DisConnect(); 
+            }
+
+            return dt;
+        }
+
+        public DataTable GetTiLeTraDungHan(int nam)
+        {
+            string sql = @"
+                            SELECT 
+                                CASE 
+                                    WHEN trangThai = 'da_tra' THEN N'Đúng hạn' 
+                                    WHEN trangThai = 'tra_tre' THEN N'Trễ hạn'
+                                END AS TinhTrang,
+                                COUNT(*) AS SoLuong,
+                                (COUNT(*) * 100.0) / (SELECT COUNT(*) FROM MuonTraSach WHERE YEAR(ngayTra) = @nam AND trangThai <> 'dang_muon') AS TiLe
+                            FROM MuonTraSach
+                            WHERE YEAR(ngayMuon) = @nam
+                            AND trangThai <> 'dang_muon' 
+                            GROUP BY 
+                                CASE 
+                                    WHEN trangThai = 'da_tra' THEN N'Đúng hạn' 
+                                    WHEN trangThai = 'tra_tre' THEN N'Trễ hạn'
+                                END";
+
+
+
+            DataTable dt = new DataTable();
+            try
+            {
+                Connect();  
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@nam", nam);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    dt.Load(reader);
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DisConnect();  
             }
 
             return dt;

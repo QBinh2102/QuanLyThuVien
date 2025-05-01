@@ -34,8 +34,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btTimKiem = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
-            this.btHome = new System.Windows.Forms.Button();
-            this.btLoadDanhSach = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbTheLoaiSach = new System.Windows.Forms.ComboBox();
             this.tbSoLuongConLai = new System.Windows.Forms.TextBox();
@@ -136,26 +134,6 @@
             this.tbTimKiem.Size = new System.Drawing.Size(609, 37);
             this.tbTimKiem.TabIndex = 10;
             // 
-            // btHome
-            // 
-            this.btHome.Location = new System.Drawing.Point(300, 151);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(168, 47);
-            this.btHome.TabIndex = 13;
-            this.btHome.Text = "Home ";
-            this.btHome.UseVisualStyleBackColor = true;
-            // 
-            // btLoadDanhSach
-            // 
-            this.btLoadDanhSach.AutoSize = true;
-            this.btLoadDanhSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLoadDanhSach.Location = new System.Drawing.Point(633, 152);
-            this.btLoadDanhSach.Name = "btLoadDanhSach";
-            this.btLoadDanhSach.Size = new System.Drawing.Size(192, 47);
-            this.btLoadDanhSach.TabIndex = 14;
-            this.btLoadDanhSach.Text = "Load danh sách";
-            this.btLoadDanhSach.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.cbTheLoaiSach);
@@ -174,7 +152,7 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.tbMaSach);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(12, 204);
+            this.groupBox3.Location = new System.Drawing.Point(12, 151);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1077, 202);
             this.groupBox3.TabIndex = 15;
@@ -321,7 +299,7 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(31, 412);
+            this.btThem.Location = new System.Drawing.Point(31, 359);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(117, 56);
             this.btThem.TabIndex = 16;
@@ -331,7 +309,7 @@
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(266, 413);
+            this.btSua.Location = new System.Drawing.Point(266, 360);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(117, 56);
             this.btSua.TabIndex = 17;
@@ -341,7 +319,7 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(501, 413);
+            this.btXoa.Location = new System.Drawing.Point(501, 360);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(117, 56);
             this.btXoa.TabIndex = 18;
@@ -351,7 +329,7 @@
             // 
             // btLuu
             // 
-            this.btLuu.Location = new System.Drawing.Point(736, 412);
+            this.btLuu.Location = new System.Drawing.Point(736, 359);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(117, 56);
             this.btLuu.TabIndex = 19;
@@ -360,7 +338,7 @@
             // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(972, 412);
+            this.btReset.Location = new System.Drawing.Point(972, 359);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(117, 56);
             this.btReset.TabIndex = 20;
@@ -371,7 +349,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dgvSach);
-            this.groupBox4.Location = new System.Drawing.Point(12, 475);
+            this.groupBox4.Location = new System.Drawing.Point(12, 422);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1076, 244);
             this.groupBox4.TabIndex = 21;
@@ -466,7 +444,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 731);
+            this.ClientSize = new System.Drawing.Size(1101, 683);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btReset);
             this.Controls.Add(this.btLuu);
@@ -474,8 +452,6 @@
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btThem);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.btLoadDanhSach);
-            this.Controls.Add(this.btHome);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -492,7 +468,6 @@
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -503,8 +478,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btTimKiem;
         private System.Windows.Forms.TextBox tbTimKiem;
-        private System.Windows.Forms.Button btHome;
-        private System.Windows.Forms.Button btLoadDanhSach;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tbSoLuongConLai;
         private System.Windows.Forms.Label label6;
