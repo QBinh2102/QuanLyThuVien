@@ -71,7 +71,7 @@
             // 
             this.tbTheLoai.Location = new System.Drawing.Point(27, 73);
             this.tbTheLoai.Name = "tbTheLoai";
-            this.tbTheLoai.Size = new System.Drawing.Size(623, 38);
+            this.tbTheLoai.Size = new System.Drawing.Size(623, 32);
             this.tbTheLoai.TabIndex = 4;
             // 
             // label1
@@ -79,7 +79,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 32);
+            this.label1.Size = new System.Drawing.Size(261, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm theo tên thể loại";
             // 
@@ -87,7 +87,7 @@
             // 
             this.tbTimKiem.Location = new System.Drawing.Point(72, 63);
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(615, 38);
+            this.tbTimKiem.Size = new System.Drawing.Size(615, 32);
             this.tbTimKiem.TabIndex = 2;
             // 
             // btTimKiem
@@ -164,7 +164,7 @@
             // 
             // tenTheLoai
             // 
-            this.tenTheLoai.DataPropertyName = "tenTheLoai(none)";
+            this.tenTheLoai.DataPropertyName = "tenTheLoai";
             this.tenTheLoai.HeaderText = "Tên thể loại";
             this.tenTheLoai.MinimumWidth = 6;
             this.tenTheLoai.Name = "tenTheLoai";
@@ -172,7 +172,7 @@
             // 
             // QuanLyTheLoaiSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 661);
             this.Controls.Add(this.groupBox2);

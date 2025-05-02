@@ -117,5 +117,10 @@ namespace PresentationLayer
             ThongKe thongKe = new ThongKe();
             AddForm(thongKe);
         }
+
+        private void tsmiThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

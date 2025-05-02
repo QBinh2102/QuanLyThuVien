@@ -25,9 +25,22 @@ namespace PresentationLayer
             tbMaDocGia.ReadOnly = true;
         }
 
+        private void LoadForm()
+        {
+            tbMaDocGia.Clear();
+            tbHoTen.Clear();
+            tbSDT.Clear();
+            tbEmail.Clear();
+            tbDiaChi.Clear();
+            tbTimKiem.Clear();
+            cbActive.Checked = false;
+            dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+        }
+
         private void QuanLyDocGia_Load(object sender, EventArgs e)
         {
             dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+            
         }
 
         private void dgvDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -76,11 +89,7 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Thêm độc giả thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
-
-            }
-            else
-            {
-
+                LoadForm();
             }
         }
 
@@ -150,6 +159,7 @@ namespace PresentationLayer
                     tbSDT.Clear();
                     tbEmail.Clear();
                     tbDiaChi.Clear();
+                    cbActive.Checked = false;
                 }
                 else
                 {
@@ -160,14 +170,7 @@ namespace PresentationLayer
 
         private void btReset_Click(object sender, EventArgs e)
         {
-            tbMaDocGia.Clear();
-            tbHoTen.Clear();
-            tbSDT.Clear();
-            tbEmail.Clear();
-            tbDiaChi.Clear();
-            tbTimKiem.Clear();
-            cbActive.Checked = false;
-            dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+            LoadForm();
         }
 
         private void btTimKiem_Click(object sender, EventArgs e)
@@ -183,7 +186,5 @@ namespace PresentationLayer
                 dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
             }
         }
-
-     
     }
 }

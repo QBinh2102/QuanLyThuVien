@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using BusinessLayer;
@@ -84,32 +85,32 @@ namespace PresentationLayer
 
             Series series = new Series("Tỉ lệ trả đúng hạn")
             {
-                ChartType = SeriesChartType.Pie, 
-                IsValueShownAsLabel = true,       
-                Font = new Font("Arial", 10),    
+                ChartType = SeriesChartType.Pie,
+                IsValueShownAsLabel = true,
+                Font = new Font("Arial", 10),
             };
 
-        
+
+            double tongSoLuong = dt.AsEnumerable().Sum(r => Convert.ToDouble(r["SoLuong"]));
+
             foreach (DataRow row in dt.Rows)
             {
-                string label = row["TinhTrang"].ToString();  
+                string label = row["TinhTrang"].ToString();
                 int value = Convert.ToInt32(row["SoLuong"]);
-                double tiLe = Convert.ToDouble(row["TiLe"]);
+                double tiLe = (tongSoLuong == 0) ? 0 : value * 100.0 / tongSoLuong;
 
-                
                 DataPoint dp = new DataPoint
                 {
                     AxisLabel = label,
                     YValues = new double[] { value },
-                    Label = $"{label}: {tiLe:F2}% ({value} lượt)"  
+                    Label = $"{label}: {tiLe:F2}% ({value} lượt)"
                 };
 
-                
                 series.Points.Add(dp);
             }
+
             chartTiLeDungHan.Series.Add(series);
             chartTiLeDungHan.Titles.Add($"Tỉ lệ trả sách đúng hạn trong năm {nam}");
         }
-
     }
 }

@@ -94,7 +94,7 @@ namespace DataLayer
         public DocGia GetDocGiaTheoId(string idDocGia)
         {
             DocGia docGia = new DocGia();
-            string sql = "SELECT * FROM DocGia WHERE id = '" + idDocGia + "'";
+            string sql = "SELECT * FROM DocGia WHERE id = '" + idDocGia + "' AND active = '"+true+"'";
             try
             {
                 Connect();

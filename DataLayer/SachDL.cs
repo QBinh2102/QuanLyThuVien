@@ -28,7 +28,7 @@ namespace DataLayer
             s.soLuongConLai, 
             s.giaBia 
         FROM Sach s
-        JOIN TheLoaiSach tl ON s.idTheLoai = tl.id";
+        LEFT JOIN TheLoaiSach tl ON s.idTheLoai = tl.id";
 
             try
             {

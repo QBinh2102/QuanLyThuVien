@@ -84,7 +84,7 @@
             this.label2.Location = new System.Drawing.Point(21, 168);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 32);
+            this.label2.Size = new System.Drawing.Size(118, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã độc giả";
             // 
@@ -93,16 +93,16 @@
             this.tbMaDocGia.Location = new System.Drawing.Point(221, 162);
             this.tbMaDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.tbMaDocGia.Name = "tbMaDocGia";
-            this.tbMaDocGia.Size = new System.Drawing.Size(258, 38);
-            this.tbMaDocGia.TabIndex = 2;
+            this.tbMaDocGia.Size = new System.Drawing.Size(258, 32);
+            this.tbMaDocGia.TabIndex = 0;
             // 
             // tbHoTen
             // 
             this.tbHoTen.Location = new System.Drawing.Point(221, 206);
             this.tbHoTen.Margin = new System.Windows.Forms.Padding(6);
             this.tbHoTen.Name = "tbHoTen";
-            this.tbHoTen.Size = new System.Drawing.Size(405, 38);
-            this.tbHoTen.TabIndex = 4;
+            this.tbHoTen.Size = new System.Drawing.Size(405, 32);
+            this.tbHoTen.TabIndex = 1;
             // 
             // label3
             // 
@@ -111,7 +111,7 @@
             this.label3.Location = new System.Drawing.Point(22, 209);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 32);
+            this.label3.Size = new System.Drawing.Size(105, 26);
             this.label3.TabIndex = 3;
             this.label3.Text = "Họ và tên";
             // 
@@ -120,8 +120,8 @@
             this.tbSDT.Location = new System.Drawing.Point(221, 250);
             this.tbSDT.Margin = new System.Windows.Forms.Padding(6);
             this.tbSDT.Name = "tbSDT";
-            this.tbSDT.Size = new System.Drawing.Size(298, 38);
-            this.tbSDT.TabIndex = 6;
+            this.tbSDT.Size = new System.Drawing.Size(298, 32);
+            this.tbSDT.TabIndex = 2;
             // 
             // label4
             // 
@@ -130,7 +130,7 @@
             this.label4.Location = new System.Drawing.Point(21, 250);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 32);
+            this.label4.Size = new System.Drawing.Size(139, 26);
             this.label4.TabIndex = 5;
             this.label4.Text = "Số điện thoại";
             // 
@@ -139,8 +139,8 @@
             this.tbEmail.Location = new System.Drawing.Point(221, 294);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(6);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(460, 38);
-            this.tbEmail.TabIndex = 8;
+            this.tbEmail.Size = new System.Drawing.Size(460, 32);
+            this.tbEmail.TabIndex = 3;
             // 
             // label5
             // 
@@ -149,7 +149,7 @@
             this.label5.Location = new System.Drawing.Point(22, 294);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 32);
+            this.label5.Size = new System.Drawing.Size(68, 26);
             this.label5.TabIndex = 7;
             this.label5.Text = "Email";
             // 
@@ -173,17 +173,18 @@
             this.btTimKiem.Margin = new System.Windows.Forms.Padding(6);
             this.btTimKiem.Name = "btTimKiem";
             this.btTimKiem.Size = new System.Drawing.Size(133, 55);
-            this.btTimKiem.TabIndex = 11;
+            this.btTimKiem.TabIndex = 1;
             this.btTimKiem.Text = "Tìm";
             this.btTimKiem.UseVisualStyleBackColor = true;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
             // tbTimKiem
             // 
             this.tbTimKiem.Location = new System.Drawing.Point(51, 126);
             this.tbTimKiem.Margin = new System.Windows.Forms.Padding(6);
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(395, 38);
-            this.tbTimKiem.TabIndex = 10;
+            this.tbTimKiem.Size = new System.Drawing.Size(395, 32);
+            this.tbTimKiem.TabIndex = 0;
             // 
             // label6
             // 
@@ -192,7 +193,7 @@
             this.label6.Location = new System.Drawing.Point(45, 60);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 32);
+            this.label6.Size = new System.Drawing.Size(185, 26);
             this.label6.TabIndex = 2;
             this.label6.Text = "Tìm kiếm theo tên";
             // 
@@ -202,7 +203,7 @@
             this.btReset.Margin = new System.Windows.Forms.Padding(6);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(126, 53);
-            this.btReset.TabIndex = 12;
+            this.btReset.TabIndex = 8;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
@@ -213,7 +214,7 @@
             this.btThem.Margin = new System.Windows.Forms.Padding(6);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(126, 53);
-            this.btThem.TabIndex = 13;
+            this.btThem.TabIndex = 5;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
@@ -224,7 +225,7 @@
             this.btSua.Margin = new System.Windows.Forms.Padding(6);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(126, 53);
-            this.btSua.TabIndex = 14;
+            this.btSua.TabIndex = 7;
             this.btSua.Text = "Sửa ";
             this.btSua.UseVisualStyleBackColor = true;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
@@ -235,7 +236,7 @@
             this.btXoa.Margin = new System.Windows.Forms.Padding(6);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(126, 53);
-            this.btXoa.TabIndex = 15;
+            this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -333,8 +334,8 @@
             this.tbDiaChi.Location = new System.Drawing.Point(221, 336);
             this.tbDiaChi.Margin = new System.Windows.Forms.Padding(6);
             this.tbDiaChi.Name = "tbDiaChi";
-            this.tbDiaChi.Size = new System.Drawing.Size(405, 38);
-            this.tbDiaChi.TabIndex = 18;
+            this.tbDiaChi.Size = new System.Drawing.Size(405, 32);
+            this.tbDiaChi.TabIndex = 4;
             // 
             // label7
             // 
@@ -343,7 +344,7 @@
             this.label7.Location = new System.Drawing.Point(22, 339);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 32);
+            this.label7.Size = new System.Drawing.Size(79, 26);
             this.label7.TabIndex = 17;
             this.label7.Text = "Địa chỉ";
             // 
@@ -352,14 +353,14 @@
             this.cbActive.AutoSize = true;
             this.cbActive.Location = new System.Drawing.Point(524, 161);
             this.cbActive.Name = "cbActive";
-            this.cbActive.Size = new System.Drawing.Size(114, 36);
+            this.cbActive.Size = new System.Drawing.Size(91, 30);
             this.cbActive.TabIndex = 19;
             this.cbActive.Text = "Active";
             this.cbActive.UseVisualStyleBackColor = true;
             // 
             // QuanLyDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 855);
             this.Controls.Add(this.cbActive);

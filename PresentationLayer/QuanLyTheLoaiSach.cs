@@ -35,7 +35,7 @@ namespace PresentationLayer
         {
             if (string.IsNullOrWhiteSpace(tbTheLoai.Text))
             {
-                MessageBox.Show("Vui lòng nhập tên thể loại.");
+                MessageBox.Show("Vui lòng nhập tên thể loại.","Thể loại sách",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 return;
             }
 
@@ -45,7 +45,7 @@ namespace PresentationLayer
             int result = theLoaiSachBL.AddTheLoai(theLoai);
             if (result > 0)
             {
-                MessageBox.Show("Thêm thể loại thành công!");
+                MessageBox.Show("Thêm thể loại thành công!", "Thể loại sách", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dgvTheLoaiSach.DataSource = theLoaiSachBL.GetAllTheLoaiSach();
                 ResetForm();
             }
@@ -68,7 +68,7 @@ namespace PresentationLayer
             int result = theLoaiSachBL.UpdateTheLoai(theLoai);
             if (result > 0)
             {
-                MessageBox.Show("Cập nhật thành công!");
+                MessageBox.Show("Cập nhật thành công!", "Thể loại sách", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dgvTheLoaiSach.DataSource = theLoaiSachBL.GetAllTheLoaiSach();
                 ResetForm();
             }
