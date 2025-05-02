@@ -19,3 +19,10 @@ C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\BusinessLayer.dll
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\BusinessLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\BusinessLayer\obj\Debug\BusinessLayer.pdb

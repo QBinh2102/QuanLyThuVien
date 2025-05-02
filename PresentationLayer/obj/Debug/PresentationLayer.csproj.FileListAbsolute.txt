@@ -61,3 +61,24 @@ C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\PresentationLayer.exe.config
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\PresentationLayer.exe
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\PresentationLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyDocGia.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyMuonTraSach.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyNhanVien.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLySach.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.QuanLyTheLoaiSach.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayDoiQuyDinh.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThayMatKhau.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongKe.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.ThongTin.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.TrangChu.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\PresentationLayer\obj\Debug\PresentationLayer.pdb

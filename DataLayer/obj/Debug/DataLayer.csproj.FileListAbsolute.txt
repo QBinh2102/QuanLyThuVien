@@ -19,3 +19,10 @@ C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.dll
 C:\Users\toquocbinh2102\Documents\Học Tập\Lập trình cơ sở dữ liệu\New folder\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\DataLayer.dll
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\bin\Debug\DataLayer.pdb
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\huynh\Desktop\Code2\QuanLyThuVien\DataLayer\obj\Debug\DataLayer.pdb
