@@ -36,7 +36,6 @@
             this.btTimKiem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
-            this.btLuu = new System.Windows.Forms.Button();
             this.btReset = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
@@ -113,22 +112,13 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(279, 336);
+            this.btXoa.Location = new System.Drawing.Point(374, 336);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(130, 62);
             this.btXoa.TabIndex = 5;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
-            // btLuu
-            // 
-            this.btLuu.Location = new System.Drawing.Point(480, 336);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(130, 62);
-            this.btLuu.TabIndex = 6;
-            this.btLuu.Text = "Lưu";
-            this.btLuu.UseVisualStyleBackColor = true;
             // 
             // btReset
             // 
@@ -187,7 +177,6 @@
             this.ClientSize = new System.Drawing.Size(886, 661);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btReset);
-            this.Controls.Add(this.btLuu);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btTimKiem);
@@ -218,7 +207,6 @@
         private System.Windows.Forms.Button btTimKiem;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btLuu;
         private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvTheLoaiSach;

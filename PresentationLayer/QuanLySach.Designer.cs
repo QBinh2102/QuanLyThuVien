@@ -54,7 +54,6 @@
             this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
-            this.btLuu = new System.Windows.Forms.Button();
             this.btReset = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvSach = new System.Windows.Forms.DataGridView();
@@ -169,6 +168,7 @@
             // 
             // tbSoLuongConLai
             // 
+            this.tbSoLuongConLai.BackColor = System.Drawing.SystemColors.Window;
             this.tbSoLuongConLai.Location = new System.Drawing.Point(570, 160);
             this.tbSoLuongConLai.Name = "tbSoLuongConLai";
             this.tbSoLuongConLai.Size = new System.Drawing.Size(243, 37);
@@ -234,6 +234,7 @@
             this.tbSoLuongNhap.Name = "tbSoLuongNhap";
             this.tbSoLuongNhap.Size = new System.Drawing.Size(243, 37);
             this.tbSoLuongNhap.TabIndex = 12;
+            this.tbSoLuongNhap.TextChanged += new System.EventHandler(this.tbSoLuongNhap_TextChanged);
             // 
             // label5
             // 
@@ -299,7 +300,7 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(31, 359);
+            this.btThem.Location = new System.Drawing.Point(128, 360);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(117, 56);
             this.btThem.TabIndex = 16;
@@ -309,7 +310,7 @@
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(266, 360);
+            this.btSua.Location = new System.Drawing.Point(336, 360);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(117, 56);
             this.btSua.TabIndex = 17;
@@ -319,7 +320,7 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(501, 360);
+            this.btXoa.Location = new System.Drawing.Point(567, 360);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(117, 56);
             this.btXoa.TabIndex = 18;
@@ -327,18 +328,9 @@
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // btLuu
-            // 
-            this.btLuu.Location = new System.Drawing.Point(736, 359);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(117, 56);
-            this.btLuu.TabIndex = 19;
-            this.btLuu.Text = "Lưu";
-            this.btLuu.UseVisualStyleBackColor = true;
-            // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(972, 359);
+            this.btReset.Location = new System.Drawing.Point(804, 360);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(117, 56);
             this.btReset.TabIndex = 20;
@@ -447,7 +439,6 @@
             this.ClientSize = new System.Drawing.Size(1101, 683);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btReset);
-            this.Controls.Add(this.btLuu);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btThem);
@@ -497,7 +488,6 @@
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btLuu;
         private System.Windows.Forms.Button btReset;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgvSach;

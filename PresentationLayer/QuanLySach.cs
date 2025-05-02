@@ -25,12 +25,20 @@ namespace PresentationLayer
             sachBL = new SachBL();
             theLoaiSachBL = new TheLoaiSachBL();
 
+            this.tbSoLuongNhap.TextChanged += new System.EventHandler(this.tbSoLuongNhap_TextChanged);
+
+
         }
 
         private void QuanLySach_Load(object sender, EventArgs e)
         {
             dgvSach.DataSource = sachBL.GetAllSach();
-            
+            if (dgvSach.Columns.Contains("idTheLoai"))
+            {
+                dgvSach.Columns["idTheLoai"].Visible = false;
+            }
+            LoadTheLoaiToComboBox();
+
         }
 
         private void LoadTheLoaiToComboBox()
@@ -45,7 +53,7 @@ namespace PresentationLayer
             if (e.RowIndex >= 0) 
             {
 
-                LoadTheLoaiToComboBox();
+                
 
                 DataGridViewRow row = dgvSach.Rows[e.RowIndex];
 
@@ -106,7 +114,11 @@ namespace PresentationLayer
             sach.giaBia = Convert.ToDouble(tbGiaBia.Text);
             sach.idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
             sach.tenTheLoai = cbTheLoaiSach.Text;
-
+            if (sach.soLuongConLai > sach.soLuong)
+            {
+                MessageBox.Show("Số lượng còn lại không được lớn hơn số lượng nhập!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int result = sachBL.AddSach(sach);
             if (result != 0)
             {
@@ -137,7 +149,11 @@ namespace PresentationLayer
             sach.giaBia = Convert.ToDouble(tbGiaBia.Text);
             sach.idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
             sach.tenTheLoai = cbTheLoaiSach.Text;
-
+            if (sach.soLuongConLai > sach.soLuong)
+            {
+                MessageBox.Show("Số lượng còn lại không được lớn hơn số lượng nhập!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int result = sachBL.UpdateSach(sach);
             if (result != 0)
             {
@@ -196,6 +212,14 @@ namespace PresentationLayer
 
             idSachTMP = null;
             dgvSach.DataSource = sachBL.GetAllSach();
+        }
+
+        private void tbSoLuongNhap_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(tbSoLuongNhap.Text.Trim(), out int soLuong))
+            {
+                tbSoLuongConLai.Text = soLuong.ToString();
+            }
         }
     }
 }
