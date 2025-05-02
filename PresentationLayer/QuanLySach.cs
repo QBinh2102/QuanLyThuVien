@@ -85,10 +85,6 @@ namespace PresentationLayer
             {
                 ketQua = sachBL.TimKiemTheoTacGia(keyword);
             }
-            //else if (rbTheoTheLoai.Checked)
-            //{
-            //    ketQua = sachBL.TimKiemTheoTheLoai(keyword);
-            //}
             else
             {
                 MessageBox.Show("Vui lòng chọn kiểu tìm kiếm.");
@@ -100,20 +96,34 @@ namespace PresentationLayer
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            Sach sach = new Sach();
-            sach.tenSach = tbTenSach.Text.Trim();
-            sach.tacGia = tbTacGia.Text.Trim();
-            sach.namXuatBan = tbNamXB.Text.Trim();
-            sach.soLuong = Convert.ToInt32(tbSoLuongNhap.Text);
-            sach.soLuongConLai = Convert.ToInt32(tbSoLuongConLai.Text);
-            sach.giaBia = Convert.ToDouble(tbGiaBia.Text);
-            sach.idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
-            sach.tenTheLoai = cbTheLoaiSach.Text;
-            if (sach.soLuongConLai > sach.soLuong)
+            string tenSach = tbTenSach.Text.Trim();
+            string tacGia = tbTacGia.Text.Trim();
+            string namXuatBan = tbNamXB.Text.Trim();
+            string soLuong = tbSoLuongNhap.Text;
+            string soLuongConLai = tbSoLuongConLai.Text;
+            string giaBia = tbGiaBia.Text;
+            string idTheLoai = cbTheLoaiSach.SelectedValue.ToString();
+            string tenTheLoai = cbTheLoaiSach.Text;
+
+            if (tenSach.Equals("")||tacGia.Equals("")||namXuatBan.Equals("")||soLuong.Equals("")||soLuongConLai.Equals("")||giaBia.Equals("")||idTheLoai.Equals(""))
+            {
+                MessageBox.Show("Cần nhập đúng thông tin", "Sách", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (int.Parse(soLuongConLai) > int.Parse(soLuong))
             {
                 MessageBox.Show("Số lượng còn lại không được lớn hơn số lượng nhập!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            Sach sach = new Sach();
+            sach.tenSach = tenSach;
+            sach.tacGia = tacGia;
+            sach.namXuatBan = namXuatBan;
+            sach.soLuong = int.Parse(soLuongConLai);
+            sach.soLuongConLai = int.Parse(soLuong);
+            sach.giaBia = double.Parse(giaBia);
+            sach.idTheLoai = idTheLoai;
+            sach.tenTheLoai = tenTheLoai;
             int result = sachBL.AddSach(sach);
             if (result != 0)
             {

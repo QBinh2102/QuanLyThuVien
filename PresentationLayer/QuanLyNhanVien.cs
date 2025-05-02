@@ -32,6 +32,7 @@ namespace PresentationLayer
             }
             cbVaiTro.Items.Add("Nhân viên");  
             cbVaiTro.Items.Add("Quản trị");
+            cbVaiTro.SelectedIndex = 1;
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -83,29 +84,42 @@ namespace PresentationLayer
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            NhanVien nv = new NhanVien();
-            nv.hoTen = tbHoTen.Text;
-            nv.soDienThoai = tbSDT.Text;
-            nv.queQuan = tbQueQuan.Text;
-            nv.username = tbUsername.Text;
-            nv.email = tbEmail.Text;
-            nv.ngayTao = DateTime.Now;
-            nv.vaiTro = cbVaiTro.SelectedIndex;
-            nv.active = true;
-            nv.password = "Demo@123";
+            string hoTen = tbHoTen.Text.Trim();
+            string email = tbEmail.Text.Trim();
+            string sdt = tbSDT.Text.Trim();
+            string diaChi = tbQueQuan.Text.Trim();
+            string username = tbUsername.Text.Trim();
 
-            if (nhanVienBL.CheckEmail(nv.email))
+            if (hoTen.Equals("") || email.Equals("") || sdt.Equals("") || diaChi.Equals("") || username.Equals("") || cbVaiTro.SelectedIndex == -1)
+            {
+                MessageBox.Show("Cần nhập đầy đủ thông tin", "Nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (nhanVienBL.CheckEmail(email))
             {
                 MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            NhanVien nv = new NhanVien
+            {
+                hoTen = hoTen,
+                email = email,
+                soDienThoai = sdt,
+                queQuan = diaChi,
+                username = username,
+                ngayTao = DateTime.Now,
+                vaiTro = cbVaiTro.SelectedIndex,
+                active = true,
+                password = "Demo@123"
+            };
 
             int result = nhanVienBL.AddNhanVien(nv);
             if (result != 0)
             {
                 MessageBox.Show("Thêm nhân viên thành công!", "Nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dgvNhanVien.DataSource = nhanVienBL.GetAllNhanVien();
-
             }
         }
 

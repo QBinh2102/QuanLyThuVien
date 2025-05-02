@@ -72,6 +72,13 @@ namespace PresentationLayer
 
         private void btLuu_Click(object sender, EventArgs e)
         {
+            string maDocGia = tbMaDG.Text.ToString();
+            string maSach = tbMaSach.Text.ToString();
+            if(maDocGia == "" || maSach == "")
+            {
+                MessageBox.Show("Cần kiểm tra thông tin độc giả hoặc sách", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int soSachDangMuon = int.Parse(tbSoSachDaMuon.Text.ToString());
             if (soSachDangMuon < quyDinh.SoSach)
             {

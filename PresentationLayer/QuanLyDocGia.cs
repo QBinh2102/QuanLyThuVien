@@ -69,27 +69,35 @@ namespace PresentationLayer
             string sdt = tbSDT.Text.ToString();
             string diaChi = tbDiaChi.Text.ToString();
 
-            if (docGiaBL.CheckEmail(email))
+            if (hoTen.Equals("") || email.Equals("") || sdt.Equals("") || diaChi.Equals(""))
             {
-                MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Cần nhập đủ thông tin", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            DocGia docGia = new DocGia();
-            docGia.id = id.ToString();
-            docGia.hoTen = hoTen;
-            docGia.email = email;
-            docGia.soDienThoai = sdt;
-            docGia.diaChi = diaChi;
-            docGia.ngayTao = DateTime.Now;
-            docGia.active = true;
-
-            int result = docGiaBL.AddDocGia(docGia);
-            if (result != 0)
+            else
             {
-                MessageBox.Show("Thêm độc giả thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
-                LoadForm();
+
+                if (docGiaBL.CheckEmail(email))
+                {
+                    MessageBox.Show("Email này đã tồn tại, vui lòng nhập email khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                DocGia docGia = new DocGia();
+                docGia.id = id.ToString();
+                docGia.hoTen = hoTen;
+                docGia.email = email;
+                docGia.soDienThoai = sdt;
+                docGia.diaChi = diaChi;
+                docGia.ngayTao = DateTime.Now;
+                docGia.active = true;
+
+                int result = docGiaBL.AddDocGia(docGia);
+                if (result != 0)
+                {
+                    MessageBox.Show("Thêm độc giả thành công!", "Độc giả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvDocGia.DataSource = docGiaBL.GetAllDocGia();
+                    LoadForm();
+                }
             }
         }
 

@@ -67,40 +67,40 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(895, 402);
+            this.btXoa.Location = new System.Drawing.Point(773, 393);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(116, 53);
-            this.btXoa.TabIndex = 30;
+            this.btXoa.TabIndex = 8;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(773, 402);
+            this.btSua.Location = new System.Drawing.Point(651, 393);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(116, 53);
-            this.btSua.TabIndex = 29;
+            this.btSua.TabIndex = 7;
             this.btSua.Text = "Sửa ";
             this.btSua.UseVisualStyleBackColor = true;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(651, 402);
+            this.btThem.Location = new System.Drawing.Point(529, 393);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(116, 53);
-            this.btThem.TabIndex = 28;
+            this.btThem.TabIndex = 6;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(529, 402);
+            this.btReset.Location = new System.Drawing.Point(894, 393);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(116, 53);
-            this.btReset.TabIndex = 27;
+            this.btReset.TabIndex = 9;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
@@ -122,7 +122,7 @@
             this.btTimKiem.Location = new System.Drawing.Point(341, 159);
             this.btTimKiem.Name = "btTimKiem";
             this.btTimKiem.Size = new System.Drawing.Size(98, 40);
-            this.btTimKiem.TabIndex = 11;
+            this.btTimKiem.TabIndex = 1;
             this.btTimKiem.Text = "Tìm";
             this.btTimKiem.UseVisualStyleBackColor = true;
             this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
@@ -131,8 +131,8 @@
             // 
             this.tbTimKiem.Location = new System.Drawing.Point(33, 102);
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(406, 38);
-            this.tbTimKiem.TabIndex = 10;
+            this.tbTimKiem.Size = new System.Drawing.Size(406, 32);
+            this.tbTimKiem.TabIndex = 0;
             // 
             // label6
             // 
@@ -140,7 +140,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(28, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(205, 29);
+            this.label6.Size = new System.Drawing.Size(160, 24);
             this.label6.TabIndex = 2;
             this.label6.Text = "Tìm kiếm theo tên";
             // 
@@ -148,8 +148,8 @@
             // 
             this.tbEmail.Location = new System.Drawing.Point(201, 308);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(263, 38);
-            this.tbEmail.TabIndex = 25;
+            this.tbEmail.Size = new System.Drawing.Size(263, 32);
+            this.tbEmail.TabIndex = 3;
             // 
             // label5
             // 
@@ -157,7 +157,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(30, 314);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 29);
+            this.label5.Size = new System.Drawing.Size(57, 24);
             this.label5.TabIndex = 24;
             this.label5.Text = "Email";
             // 
@@ -165,8 +165,8 @@
             // 
             this.tbSDT.Location = new System.Drawing.Point(201, 252);
             this.tbSDT.Name = "tbSDT";
-            this.tbSDT.Size = new System.Drawing.Size(151, 38);
-            this.tbSDT.TabIndex = 23;
+            this.tbSDT.Size = new System.Drawing.Size(151, 32);
+            this.tbSDT.TabIndex = 2;
             // 
             // label4
             // 
@@ -174,7 +174,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(30, 258);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 29);
+            this.label4.Size = new System.Drawing.Size(121, 24);
             this.label4.TabIndex = 22;
             this.label4.Text = "Số điện thoại";
             // 
@@ -182,8 +182,8 @@
             // 
             this.tbHoTen.Location = new System.Drawing.Point(201, 201);
             this.tbHoTen.Name = "tbHoTen";
-            this.tbHoTen.Size = new System.Drawing.Size(303, 38);
-            this.tbHoTen.TabIndex = 21;
+            this.tbHoTen.Size = new System.Drawing.Size(303, 32);
+            this.tbHoTen.TabIndex = 1;
             // 
             // label3
             // 
@@ -191,7 +191,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 29);
+            this.label3.Size = new System.Drawing.Size(90, 24);
             this.label3.TabIndex = 20;
             this.label3.Text = "Họ và tên";
             // 
@@ -200,7 +200,7 @@
             this.tbMaNhanVien.Location = new System.Drawing.Point(201, 86);
             this.tbMaNhanVien.Name = "tbMaNhanVien";
             this.tbMaNhanVien.ReadOnly = true;
-            this.tbMaNhanVien.Size = new System.Drawing.Size(131, 38);
+            this.tbMaNhanVien.Size = new System.Drawing.Size(131, 32);
             this.tbMaNhanVien.TabIndex = 19;
             // 
             // label2
@@ -209,7 +209,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 29);
+            this.label2.Size = new System.Drawing.Size(124, 24);
             this.label2.TabIndex = 18;
             this.label2.Text = "Mã nhân viên";
             // 
@@ -306,8 +306,8 @@
             // 
             this.tbUsername.Location = new System.Drawing.Point(201, 144);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(227, 38);
-            this.tbUsername.TabIndex = 33;
+            this.tbUsername.Size = new System.Drawing.Size(227, 32);
+            this.tbUsername.TabIndex = 0;
             // 
             // label7
             // 
@@ -315,7 +315,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 150);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 29);
+            this.label7.Size = new System.Drawing.Size(97, 24);
             this.label7.TabIndex = 32;
             this.label7.Text = "Username";
             // 
@@ -323,8 +323,8 @@
             // 
             this.tbQueQuan.Location = new System.Drawing.Point(201, 361);
             this.tbQueQuan.Name = "tbQueQuan";
-            this.tbQueQuan.Size = new System.Drawing.Size(263, 38);
-            this.tbQueQuan.TabIndex = 35;
+            this.tbQueQuan.Size = new System.Drawing.Size(263, 32);
+            this.tbQueQuan.TabIndex = 4;
             // 
             // label8
             // 
@@ -332,7 +332,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(30, 367);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 29);
+            this.label8.Size = new System.Drawing.Size(95, 24);
             this.label8.TabIndex = 34;
             this.label8.Text = "Quê quán";
             // 
@@ -341,7 +341,7 @@
             this.cbActive.AutoSize = true;
             this.cbActive.Location = new System.Drawing.Point(390, 86);
             this.cbActive.Name = "cbActive";
-            this.cbActive.Size = new System.Drawing.Size(114, 36);
+            this.cbActive.Size = new System.Drawing.Size(91, 30);
             this.cbActive.TabIndex = 20;
             this.cbActive.Text = "Active";
             this.cbActive.UseVisualStyleBackColor = true;
@@ -351,8 +351,8 @@
             this.cbVaiTro.FormattingEnabled = true;
             this.cbVaiTro.Location = new System.Drawing.Point(201, 416);
             this.cbVaiTro.Name = "cbVaiTro";
-            this.cbVaiTro.Size = new System.Drawing.Size(227, 39);
-            this.cbVaiTro.TabIndex = 36;
+            this.cbVaiTro.Size = new System.Drawing.Size(227, 34);
+            this.cbVaiTro.TabIndex = 5;
             // 
             // label9
             // 
@@ -360,13 +360,13 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(36, 422);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 29);
+            this.label9.Size = new System.Drawing.Size(63, 24);
             this.label9.TabIndex = 37;
             this.label9.Text = "Vai trò";
             // 
             // QuanLyNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 767);
             this.Controls.Add(this.label9);
