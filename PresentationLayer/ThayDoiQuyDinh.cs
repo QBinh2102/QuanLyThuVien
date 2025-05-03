@@ -36,10 +36,23 @@ namespace PresentationLayer
         {
             int soSach = int.Parse(tbSoSachMuonToiDa.Text.ToString());
             int soNgay = int.Parse(tbSoNgayMuonToiDa.Text.ToString());
+
+            if (soNgay <= 0)
+            {
+                MessageBox.Show("Số ngày mượn phải lớn hơn 0!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (soSach <= 0)
+            {
+                MessageBox.Show("Số sách mượn phải lớn hơn 0!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             quyDinh.SoSach = soSach;
             quyDinh.SoNgay = soNgay;
+
             int result = quyDinhBL.UpdateQuyDinh(quyDinh);
-            if(result != 0)
+            if (result != 0)
             {
                 MessageBox.Show("Thay đổi quy định thành công!", "Quy Định", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -48,5 +61,6 @@ namespace PresentationLayer
                 MessageBox.Show("Thay đổi quy định thất bại!", "Quy Định", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }
