@@ -74,12 +74,20 @@ namespace PresentationLayer
         {
             string maDocGia = tbMaDG.Text.ToString();
             string maSach = tbMaSach.Text.ToString();
-            if(maDocGia == "" || maSach == "")
+            string hoTen = tbHoTen.Text.ToString();
+            string tenSach = tbTenSach.Text.ToString();
+            if (maDocGia.Equals("") || maSach.Equals("") || hoTen.Equals("") || tenSach.Equals(""))
             {
                 MessageBox.Show("Cần kiểm tra thông tin độc giả hoặc sách", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             int soSachDangMuon = int.Parse(tbSoSachDaMuon.Text.ToString());
+            int soSachHienCo = int.Parse(tbSoLuongSach.Text.ToString());
+            if(soSachHienCo == 0)
+            {
+                MessageBox.Show("Sách đã hết, không thể mượn!", "Phiếu mượn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (soSachDangMuon < quyDinh.SoSach)
             {
                 string idDocGia = tbMaDG.Text.ToString();
