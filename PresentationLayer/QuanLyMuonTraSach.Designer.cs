@@ -64,10 +64,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvSachMuon = new System.Windows.Forms.DataGridView();
-            this.btCheckDocGia2 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbMaDG2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +71,10 @@
             this.ngayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btCheckDocGia2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbMaDG2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -355,6 +355,7 @@
             // 
             // tbTienPhat
             // 
+            this.tbTienPhat.Enabled = false;
             this.tbTienPhat.Location = new System.Drawing.Point(580, 152);
             this.tbTienPhat.Name = "tbTienPhat";
             this.tbTienPhat.Size = new System.Drawing.Size(193, 32);
@@ -371,6 +372,7 @@
             // 
             // dtNgayTra2
             // 
+            this.dtNgayTra2.Enabled = false;
             this.dtNgayTra2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtNgayTra2.Location = new System.Drawing.Point(228, 101);
             this.dtNgayTra2.Name = "dtNgayTra2";
@@ -379,6 +381,7 @@
             // 
             // tbSoNgayTre
             // 
+            this.tbSoNgayTre.Enabled = false;
             this.tbSoNgayTre.Location = new System.Drawing.Point(228, 152);
             this.tbSoNgayTre.Name = "tbSoNgayTre";
             this.tbSoNgayTre.Size = new System.Drawing.Size(101, 32);
@@ -395,6 +398,7 @@
             // 
             // dtNgayMuon2
             // 
+            this.dtNgayMuon2.Enabled = false;
             this.dtNgayMuon2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtNgayMuon2.Location = new System.Drawing.Point(228, 44);
             this.dtNgayMuon2.Name = "dtNgayMuon2";
@@ -452,45 +456,6 @@
             this.dgvSachMuon.TabIndex = 0;
             this.dgvSachMuon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSachMuon_CellClick);
             // 
-            // btCheckDocGia2
-            // 
-            this.btCheckDocGia2.Location = new System.Drawing.Point(517, 59);
-            this.btCheckDocGia2.Name = "btCheckDocGia2";
-            this.btCheckDocGia2.Size = new System.Drawing.Size(137, 46);
-            this.btCheckDocGia2.TabIndex = 2;
-            this.btCheckDocGia2.Text = "Check";
-            this.btCheckDocGia2.UseVisualStyleBackColor = true;
-            this.btCheckDocGia2.Click += new System.EventHandler(this.btCheckDocGia2_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(44, 70);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 26);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Mã độc giả";
-            // 
-            // tbMaDG2
-            // 
-            this.tbMaDG2.Location = new System.Drawing.Point(250, 67);
-            this.tbMaDG2.Name = "tbMaDG2";
-            this.tbMaDG2.Size = new System.Drawing.Size(182, 32);
-            this.tbMaDG2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1166, 56);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "QUẢN LÝ MƯỢN - TRẢ SÁCH";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // id
             // 
             this.id.DataPropertyName = "id";
@@ -539,6 +504,45 @@
             this.trangThai.HeaderText = "Trạng Thái";
             this.trangThai.Name = "trangThai";
             this.trangThai.Width = 130;
+            // 
+            // btCheckDocGia2
+            // 
+            this.btCheckDocGia2.Location = new System.Drawing.Point(517, 59);
+            this.btCheckDocGia2.Name = "btCheckDocGia2";
+            this.btCheckDocGia2.Size = new System.Drawing.Size(137, 46);
+            this.btCheckDocGia2.TabIndex = 2;
+            this.btCheckDocGia2.Text = "Check";
+            this.btCheckDocGia2.UseVisualStyleBackColor = true;
+            this.btCheckDocGia2.Click += new System.EventHandler(this.btCheckDocGia2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(44, 70);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 26);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Mã độc giả";
+            // 
+            // tbMaDG2
+            // 
+            this.tbMaDG2.Location = new System.Drawing.Point(250, 67);
+            this.tbMaDG2.Name = "tbMaDG2";
+            this.tbMaDG2.Size = new System.Drawing.Size(182, 32);
+            this.tbMaDG2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1166, 56);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "QUẢN LÝ MƯỢN - TRẢ SÁCH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QuanLyMuonTraSach
             // 
